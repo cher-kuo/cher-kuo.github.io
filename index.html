@@ -87,8 +87,49 @@
 
     <section id="contact" class="contact">
         <h2>Book Your Session</h2>
-        <!-- <div class="contact-container">
-            <form id="contact-form">
+        <div class="contact-container">
+            <a href="https://yourbookinglink.com" class="booking-button" target="_blank">
+                <i class="fas fa-calendar-alt"></i>
+                <span>Book with me at Omni</span>
+            </a>
+            
+            <style>
+                .booking-button {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #1e7e34; /* Dark Green */
+                    color: white;
+                    font-size: 20px; /* Bigger text */
+                    font-weight: bold;
+                    padding: 20px; /* Bigger button */
+                    border-radius: 10px; /* Smooth rounded edges */
+                    text-decoration: none;
+                    transition: all 0.3s ease-in-out;
+                    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
+                    width: 250px; /* Fixed width */
+                    text-align: center;
+                    text-transform: uppercase; /* Optional: Makes text uppercase */
+                }
+            
+                .booking-button i {
+                    font-size: 35px; /* Bigger icon */
+                    margin-bottom: 10px; /* Space between icon and text */
+                }
+            
+                .booking-button:hover {
+                    background-color: #155724; /* Even darker green on hover */
+                    transform: scale(1.1); /* Button grows slightly */
+                    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+                }
+            </style>
+            
+            <!-- Add Font Awesome if not included -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+                       
+            
+            <!-- <form id="contact-form">
                 <input type="text" placeholder="Your Name" required>
                 <input type="email" placeholder="Email Address" required>
                 <input type="tel" placeholder="Phone Number" required>
