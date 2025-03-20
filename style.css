@@ -61,7 +61,7 @@ nav {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img3.jpg?auto=format&fit=crop&w=1200') center/cover;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img1.jpg?auto=format&fit=crop&w=1200') center/cover;
     display: flex;
     align-items: center;
     text-align: center;
