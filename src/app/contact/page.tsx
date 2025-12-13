@@ -1,0 +1,93 @@
+export default function ContactPage() {
+  const phoneDisplay = "(604) 771-7898";
+  const phoneHref = "tel:+16047717898";
+  const email = "livmophysio@gmail.com";
+
+  return (
+    <main className="min-h-screen bg-zinc-50 dark:bg-black">
+      <div className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-20">
+        <header className="mb-8">
+          <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50 sm:text-4xl mb-4">
+            Contact
+          </h1>
+          <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-300">
+            Have questions about physiotherapy, your injury, or booking an appointment? Reach out and we will be happy to help you find the right next step.
+          </p>
+        </header>
+
+        <section className="grid gap-8 md:grid-cols-2">
+          <div className="space-y-4">
+            <h2 className="text-xl font-semibold text-black dark:text-zinc-50">
+              Get in touch
+            </h2>
+            <div className="space-y-3 text-zinc-700 dark:text-zinc-300">
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+                  Phone
+                </p>
+                <a
+                  href={phoneHref}
+                  className="mt-1 inline-flex items-center text-base font-medium text-primary-600 hover:text-primary-700"
+                >
+                  {phoneDisplay}
+                </a>
+              </div>
+
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+                  Email
+                </p>
+                <a
+                  href={`mailto:${email}`}
+                  className="mt-1 inline-flex items-center text-base font-medium text-primary-600 hover:text-primary-700 break-all"
+                >
+                  {email}
+                </a>
+              </div>
+
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+                  Hours
+                </p>
+                <p className="mt-1 text-base text-zinc-700 dark:text-zinc-300">
+                  Tuesday -Saturday: 8:00 AM -  8:00 PM
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="space-y-4 rounded-2xl bg-white p-6 shadow-sm border border-zinc-200 dark:border-zinc-800 dark:bg-zinc-900">
+            <h2 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
+              Booking information
+            </h2>
+            <p className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+              You can book physiotherapy appointments online through our clinic partners below. If you are unsure which location or service is right for you, feel free to call or email first.
+            </p>
+            <ul className="mt-3 space-y-2 text-sm leading-6 text-primary-600 dark:text-primary-400">
+              <li>
+                <a
+                  href="https://omnimassageandwellness.janeapp.com/#/physiotherapy"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  To book online at Omni Massage &amp; Wellness
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://mapleleaf-rehab.janeapp.com/#/staff_member/12"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:underline"
+                >
+                  To book online at Mapleleaf Rehab
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  );
+}
