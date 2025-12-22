@@ -24,6 +24,7 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'About', href: '/about' },
+    { name: 'Testimonials', href: '/testimonials' },
     { name: 'Contact', href: '/contact' },
   ];
 
@@ -43,7 +44,7 @@ const Navbar = () => {
             </div>
             <div className="flex items-center">
               <FiClock className="mr-1 text-primary-600" />
-              <span>Tues-Sat: 8:00 AM - 8:00 PM</span>
+              <span>Tues-Sat: 11:00 AM - 8:00 PM</span>
             </div>
           </div>
           <div className="flex items-center">
@@ -66,14 +67,14 @@ const Navbar = () => {
               <Link 
                 key={item.name} 
                 href={item.href}
-                className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+                className="text-gray-700 hover:text-primary-600 transition-colors font-bold"
               >
                 {item.name}
               </Link>
             ))}
             <Link 
               href="/book-appointment" 
-              className="text-gray-700 hover:text-primary-600 transition-colors font-medium"
+              className="inline-flex items-center justify-center rounded-full bg-blue-500 px-8 py-3 text-base font-semibold uppercase tracking-wide text-white shadow-lg shadow-black/40 whitespace-nowrap transition-transform transition-colors hover:bg-blue-600 hover:-translate-y-0.5 active:translate-y-0"
             >
               Book Appointment
             </Link>
@@ -98,7 +99,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-100 rounded-md"
+                className="block px-3 py-2 text-base font-bold text-gray-700 hover:bg-gray-100 rounded-md"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -106,7 +107,7 @@ const Navbar = () => {
             ))}
             <Link
               href="/book-appointment"
-              className="block w-full text-center bg-primary-600 text-white px-3 py-2 rounded-md font-medium mt-2"
+              className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-blue-500 px-8 py-3 text-base font-semibold uppercase tracking-wide text-white shadow-lg shadow-black/40 whitespace-nowrap transition-transform transition-colors hover:bg-blue-600 hover:-translate-y-0.5 active:translate-y-0"
               onClick={() => setIsOpen(false)}
             >
               Book Appointment

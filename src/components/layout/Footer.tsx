@@ -23,6 +23,7 @@ const Footer = () => {
         { name: 'Home', href: '/' },
         { name: 'About Us', href: '/about' },
         { name: 'Services', href: '/services' },
+        { name: 'Testimonials', href: '/testimonials' },
         { name: 'Contact', href: '/contact' },
         { name: 'Book Appointment', href: '/book-appointment' },
       ],
@@ -32,7 +33,7 @@ const Footer = () => {
       links: [
         { name: 'Physiotherapy', href: '/services/physiotherapy' },
         { name: 'Musculoskeletal Injury', href: '/services/musculoskeletal-injury' },
-        { name: 'Pelvic Health Physiotherapy', href: '/services/pelvic-health' },
+        { name: 'Pelvic Floor Physiotherapy', href: '/services/pelvic-floor-physiotherapy' },
         { name: 'Neurological Rehab', href: '/services/neuro-rehab' },
         { name: 'Pain Management', href: '/services/pain-management' },
       ],
@@ -56,7 +57,7 @@ const Footer = () => {
           href: 'mailto:livmophysio@gmail.com'
         },
         { 
-          name: 'Tues-Sat: 8:00 AM - 8:00 PM', 
+          name: 'Tues-Sat: 11:00 AM - 8:00 PM', 
           icon: <FaClock className="inline mr-2 text-primary-600" />,
           href: ''
         },

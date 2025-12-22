@@ -1,11 +1,23 @@
+import Image from "next/image";
+
 export default function ContactPage() {
   const phoneDisplay = "(604) 771-7898";
   const phoneHref = "tel:+16047717898";
   const email = "livmophysio@gmail.com";
 
   return (
-    <main className="min-h-screen bg-zinc-50 dark:bg-black">
-      <div className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-20">
+    <main className="relative min-h-screen flex items-center justify-center">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/watercolor-mountain-bg.jpg"
+          alt="background"
+          fill
+          className="object-cover object-top"
+          priority
+        />
+        <div className="absolute inset-0 bg-white/70" />
+      </div>
+      <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8 lg:py-28">
         <header className="mb-8">
           <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50 sm:text-4xl mb-4">
             Contact
@@ -27,7 +39,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href={phoneHref}
-                  className="mt-1 inline-flex items-center text-base font-medium text-primary-600 hover:text-primary-700"
+                  className="mt-1 inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-700"
                 >
                   {phoneDisplay}
                 </a>
@@ -39,7 +51,7 @@ export default function ContactPage() {
                 </p>
                 <a
                   href={`mailto:${email}`}
-                  className="mt-1 inline-flex items-center text-base font-medium text-primary-600 hover:text-primary-700 break-all"
+                  className="mt-1 inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-700 break-all"
                 >
                   {email}
                 </a>
@@ -49,8 +61,8 @@ export default function ContactPage() {
                 <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
                   Hours
                 </p>
-                <p className="mt-1 text-base text-zinc-700 dark:text-zinc-300">
-                  Tuesday -Saturday: 8:00 AM -  8:00 PM
+                <p className="mt-1 text-lg text-zinc-700 dark:text-zinc-300">
+                  Tuesday -Saturday: 11:00 AM -  8:00 PM
                 </p>
               </div>
             </div>
@@ -60,31 +72,27 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
               Booking information
             </h2>
-            <p className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+            <p className="text-base leading-7 text-zinc-700 dark:text-zinc-300">
               You can book physiotherapy appointments online through our clinic partners below. If you are unsure which location or service is right for you, feel free to call or email first.
             </p>
-            <ul className="mt-3 space-y-2 text-sm leading-6 text-primary-600 dark:text-primary-400">
-              <li>
-                <a
-                  href="https://omnimassageandwellness.janeapp.com/#/physiotherapy"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                >
-                  To book online at Omni Massage &amp; Wellness
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://mapleleaf-rehab.janeapp.com/#/staff_member/12"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:underline"
-                >
-                  To book online at Mapleleaf Rehab
-                </a>
-              </li>
-            </ul>
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+              <a
+                href="https://omnimassageandwellness.janeapp.com/#/physiotherapy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-green-600 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0"
+              >
+                Book at Omni
+              </a>
+              <a
+                href="https://mapleleaf-rehab.janeapp.com/#/staff_member/12"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-blue-900 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-blue-800 hover:-translate-y-0.5 active:translate-y-0"
+              >
+                Book at Mapleleaf
+              </a>
+            </div>
           </div>
         </section>
       </div>
