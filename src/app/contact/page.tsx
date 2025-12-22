@@ -77,7 +77,7 @@ export default function ContactPage() {
             </p>
             <div className="mt-4 flex flex-col gap-3 sm:flex-row">
               <a
-                href="https://omnimassageandwellness.janeapp.com/#/physiotherapy"
+                href="https://omnimassageandwellness.janeapp.com/#/staff_member/14"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center rounded-full bg-green-600 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0"
