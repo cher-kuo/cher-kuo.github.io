@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { services } from "../services-data";
 
 export async function generateStaticParams() {
@@ -23,8 +24,18 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
   }
 
   return (
-    <main className="min-h-screen bg-white">
-      <div className="mx-auto max-w-3xl px-6 pt-32 pb-16 lg:px-8 lg:pt-40 lg:pb-20">
+    <main className="relative min-h-screen flex items-center justify-center">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/watercolor-mountain-bg.jpg"
+          alt="background"
+          fill
+          className="object-cover object-top"
+          priority
+        />
+        <div className="absolute inset-0 bg-white/70" />
+      </div>
+      <div className="mx-auto max-w-3xl px-6 pt-40 pb-16 lg:px-8 lg:pt-48 lg:pb-20">
         <header className="mb-8">
           <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
             {service.title}
