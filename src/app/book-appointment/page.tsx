@@ -1,23 +1,35 @@
+import Image from "next/image";
+
 export default function BookAppointmentPage() {
   return (
-    <main className="min-h-screen bg-slate-100 dark:bg-black">
-      <div className="mx-auto max-w-4xl px-6 pt-32 pb-16 lg:px-8 lg:pt-40 lg:pb-20">
+    <main className="relative min-h-screen flex items-center justify-center">
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/watercolor-mountain-bg.jpg"
+          alt="background"
+          fill
+          className="object-cover object-top"
+          priority
+        />
+        <div className="absolute inset-0 bg-white/70" />
+      </div>
+      <div className="mx-auto max-w-4xl px-6 pt-40 pb-16 lg:px-8 lg:pt-48 lg:pb-20">
         <header className="mb-8">
-          <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50 sm:text-4xl mb-4">
+          <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl mb-4">
             Book an Appointment
           </h1>
-          <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-300">
+          <p className="max-w-2xl text-lg leading-8 text-gray-900">
             You can book one-on-one physiotherapy sessions with Cherie through our trusted clinic partners. Choose the
             location that is most convenient for you, or contact us if you are unsure which option is best.
           </p>
         </header>
 
         <section className="space-y-6">
-          <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-            <h2 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
+          <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <h2 className="text-xl font-semibold text-gray-900 mb-2">
               Omni Massage &amp; Wellness
             </h2>
-            <p className="text-sm leading-6 text-zinc-700 dark:text-zinc-300 mb-3">
+            <p className="text-sm leading-6 text-gray-900 mb-3">
               Click below to book if you prefer appointments at Omni Massage &amp; Wellness in Burnaby. You&apos;ll see real-time
               availability and can choose the time that works best for you.
             </p>
@@ -31,11 +43,11 @@ export default function BookAppointmentPage() {
             </a>
           </article>
 
-          <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900">
-            <h2 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
+          <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+            <h2 className="text-xl font-semibold text-gray-900 mb-2">
               Mapleleaf Rehab
             </h2>
-            <p className="text-sm leading-6 text-zinc-700 dark:text-zinc-300 mb-3">
+            <p className="text-sm leading-6 text-gray-900 mb-3">
               Click below to book for appointments at Mapleleaf Rehab in New Westminster. Use the online booking link to select the
               service and time that fit your needs.
             </p>
@@ -49,7 +61,7 @@ export default function BookAppointmentPage() {
             </a>
           </article>
 
-          <p className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+          <p className="text-sm leading-6 text-gray-900">
             If you have questions before booking, you can also visit our <a href="/contact" className="text-primary-600 hover:text-primary-700">Contact</a> page to call or email us directly.
           </p>
         </section>
