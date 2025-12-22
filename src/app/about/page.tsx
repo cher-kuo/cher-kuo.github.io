@@ -14,11 +14,8 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-white/70" />
       </div>
       <div className="mx-auto max-w-4xl px-6 pt-32 pb-24 lg:px-8 lg:pt-40 lg:pb-28">
-        <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl mb-6">
-          About Us
-        </h1>
         <div className="flex flex-col gap-8 md:flex-row md:items-start">
-          <div className="shrink-0 self-center md:self-start">
+          <div className="shrink-0 self-center md:self-start md:pt-20">
             <Image
               src="/images/cherie-headshot.jpg"
               alt="Portrait of Cherie, physiotherapist at Liv Motion Physiotherapy"
@@ -31,7 +28,10 @@ export default function AboutPage() {
               Cherie Kuo, PT, PhD
             </p>
           </div>
-          <div className="space-y-8 text-lg leading-8">
+          <div className="space-y-6 text-lg leading-8">
+            <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">
+              About Us
+            </h1>
             <p className="text-gray-900">
               Cherie is an experienced physiotherapist specializing in the treatment of musculoskeletal, pelvic floor, and neurological conditions. With over a decade of experience in the hospital, research and clinical settings, Cherie has honed a deep understanding of the human body, particularly in managing musculoskeletal disorders, pelvic floor dysfunctions and neurological conditions.
             </p>

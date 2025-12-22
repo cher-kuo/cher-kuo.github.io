@@ -13,7 +13,7 @@ const testimonials = [
     name: "M.M.",
     // condition: "Musculoskeletal Injury",
     quote:
-      "Couple sessions and I see the improvement.  Cherie is amazing. Professional and very knowledgeable.  She assessed my concerns carefully and tailored my treatment plan based on my needs . Great experience!",
+      "Couple sessions and I see the improvement.  Cherie is amazing. Professional and very knowledgeable.  She assessed my concerns carefully and tailored my treatment plan based on my needs. Great experience!",
   },
   {
     id: 3,

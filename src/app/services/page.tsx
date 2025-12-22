@@ -22,7 +22,7 @@ export default function ServicesPage() {
             Services
           </h1>
           <p className="max-w-2xl text-lg leading-8 text-gray-900">
-            We provide proffesional physiotherapy services across musculoskeletal injury, pelvic floor physiotherapy, neurological rehab, and pain management, tailored to your goals and lifestyle.
+            We provide professional physiotherapy services across musculoskeletal injury, pelvic floor physiotherapy, neurological rehab, and pain management, tailored to your goals and lifestyle.
           </p>
         </header>
 
