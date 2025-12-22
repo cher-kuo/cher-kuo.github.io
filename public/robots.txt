@@ -1,0 +1,10 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://cheriekuo.com
+
+# Sitemaps
+Sitemap: https://cheriekuo.com/sitemap.xml
+Sitemap: https://cheriekuo.com/server-sitemap.xml

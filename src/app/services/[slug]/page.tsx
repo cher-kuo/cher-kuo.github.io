@@ -2,6 +2,12 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { services } from "../services-data";
 
+export async function generateStaticParams() {
+  return services.map((service) => ({
+    slug: service.slug,
+  }));
+}
+
 interface ServicePageProps {
   params: Promise<{
     slug: string;

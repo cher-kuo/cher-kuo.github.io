@@ -70,13 +70,9 @@ export default function TestimonialsPage() {
               <blockquote className="text-lg leading-7 text-zinc-700 dark:text-zinc-300 italic">
                 &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
-              <div className="mt-4 flex items-center gap-2">
+              <div className="mt-4">
                 <p className="font-semibold text-black dark:text-zinc-50">
-                  {testimonial.name}
-                </p>
-                <span className="text-zinc-400">•</span>
-                <p className="text-sm text-zinc-500 dark:text-zinc-400">
-                  {testimonial.condition}
+                  — {testimonial.name}
                 </p>
               </div>
             </article>
