@@ -93,13 +93,13 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white shadow-lg">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+        <div className="md:hidden bg-white shadow-lg absolute top-full left-0 right-0 z-50">
+          <nav className="px-4 pt-2 pb-4 space-y-2">
             {navItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="block px-3 py-2 text-base font-bold text-gray-700 hover:bg-gray-100 rounded-md"
+                className="block px-4 py-3 text-base font-bold text-gray-700 hover:bg-gray-100 rounded-md"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
@@ -107,12 +107,12 @@ const Navbar = () => {
             ))}
             <Link
               href="/book-appointment"
-              className="mt-2 inline-flex w-full items-center justify-center rounded-full bg-blue-500 px-8 py-3 text-base font-semibold uppercase tracking-wide text-white shadow-lg shadow-black/40 whitespace-nowrap transition-transform transition-colors hover:bg-blue-600 hover:-translate-y-0.5 active:translate-y-0"
+              className="mt-3 block w-full text-center rounded-full bg-blue-500 px-8 py-3 text-base font-semibold uppercase tracking-wide text-white shadow-lg shadow-black/40 whitespace-nowrap transition-transform transition-colors hover:bg-blue-600 hover:-translate-y-0.5 active:translate-y-0"
               onClick={() => setIsOpen(false)}
             >
               Book Appointment
             </Link>
-          </div>
+          </nav>
         </div>
       )}
     </header>

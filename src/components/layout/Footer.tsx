@@ -1,6 +1,8 @@
+'use client';
+
 import Link from 'next/link';
-import { ReactNode } from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock } from 'react-icons/fa';
+import { ReactNode, useState } from 'react';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 interface FooterLink {
   name: string;
@@ -15,6 +17,14 @@ interface FooterSection {
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const [expandedSections, setExpandedSections] = useState<Record<string, boolean>>({});
+
+  const toggleSection = (title: string) => {
+    setExpandedSections(prev => ({
+      ...prev,
+      [title]: !prev[title]
+    }));
+  };
   
   const footerLinks: FooterSection[] = [
     {
@@ -100,9 +110,25 @@ const Footer = () => {
           </div>
 
           {footerLinks.map((section, index) => (
-            <div key={index} className="mb-8 md:mb-0">
-              <h4 className="text-lg font-semibold mb-4 text-white">{section.title}</h4>
-              <ul className="space-y-2">
+            <div key={index} className="mb-4 md:mb-0">
+              {/* Mobile: Collapsible header */}
+              <button
+                className="md:hidden w-full flex justify-between items-center text-lg font-semibold text-white py-2"
+                onClick={() => toggleSection(section.title)}
+              >
+                {section.title}
+                {expandedSections[section.title] ? (
+                  <FaChevronUp className="text-gray-400" />
+                ) : (
+                  <FaChevronDown className="text-gray-400" />
+                )}
+              </button>
+              {/* Desktop: Always visible header */}
+              <h4 className="hidden md:block text-lg font-semibold mb-4 text-white">{section.title}</h4>
+              {/* Mobile: Collapsible content / Desktop: Always visible */}
+              <ul className={`space-y-2 overflow-hidden transition-all duration-300 ${
+                expandedSections[section.title] ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0 md:max-h-none md:opacity-100'
+              }`}>
                 {section.links.map((link, linkIndex) => (
                   <li key={linkIndex}>
                     {link.href ? (
