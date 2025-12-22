@@ -14,7 +14,7 @@ export default function AboutPage() {
         <div className="absolute inset-0 bg-white/70" />
       </div>
       <div className="mx-auto max-w-4xl px-6 pt-32 pb-24 lg:px-8 lg:pt-40 lg:pb-28">
-        <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50 sm:text-4xl mb-6">
+        <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl mb-6">
           About Us
         </h1>
         <div className="flex flex-col gap-8 md:flex-row md:items-start">
@@ -27,18 +27,18 @@ export default function AboutPage() {
               className="h-auto w-48 rounded-xl object-cover shadow-lg md:w-56"
               priority
             />
-            <p className="mt-3 text-center text-base font-semibold text-zinc-900 dark:text-zinc-100">
+            <p className="mt-3 text-center text-base font-semibold text-gray-900">
               Cherie Kuo, PT, PhD
             </p>
           </div>
-          <div className="space-y-8 text-lg leading-8 text-black dark:text-zinc-300">
-            <p>
+          <div className="space-y-8 text-lg leading-8">
+            <p className="text-gray-900">
               Cherie is an experienced physiotherapist specializing in the treatment of musculoskeletal, pelvic floor, and neurological conditions. With over a decade of experience in the hospital, research and clinical settings, Cherie has honed a deep understanding of the human body, particularly in managing musculoskeletal disorders, pelvic floor dysfunctions and neurological conditions.
             </p>
-            <p>
+            <p className="text-gray-900">
               Cherie's approach integrates evidence-based practices with personalized care, ensuring each patient receives a tailored treatment plan that addresses their unique needs. Known for a compassionate and patient-centered approach, Cherie has successfully helped countless individuals regain function, reduce pain, and improve their overall quality of life.
             </p>
-            <p>
+            <p className="text-gray-900">
               Cherie is also dedicated to continuing education, regularly attending workshops and conferences to stay at the forefront of advancements in physiotherapy. She is certified in using dry needling (AN-IMS) to treat musculoskeletal conditions and completed her pelvic floor physiotherapy training to treat pelvic floor dysfunctions. 
             </p>
           </div>

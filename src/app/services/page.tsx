@@ -16,12 +16,12 @@ export default function ServicesPage() {
         />
         <div className="absolute inset-0 bg-white/70" />
       </div>
-      <div className="mx-auto max-w-5xl px-6 pt-32 pb-24 lg:px-8 lg:pt-40 lg:pb-28">
+      <div className="mx-auto max-w-5xl px-6 pt-40 pb-24 lg:px-8 lg:pt-48 lg:pb-28">
         <header className="mb-10">
-          <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50 sm:text-4xl mb-4">
+          <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl mb-4">
             Services
           </h1>
-          <p className="max-w-2xl text-lg leading-8 text-black dark:text-zinc-300">
+          <p className="max-w-2xl text-lg leading-8 text-gray-900">
             We provide proffesional physiotherapy services across musculoskeletal injury, pelvic floor physiotherapy, neurological rehab, and pain management, tailored to your goals and lifestyle.
           </p>
         </header>
@@ -31,16 +31,16 @@ export default function ServicesPage() {
             <Link
               key={service.slug}
               href={`/services/${service.slug}`}
-              className="flex flex-col justify-between rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
+              className="flex flex-col justify-between rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
             >
               <div>
-                <h2 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
+                <h2 className="text-xl font-semibold text-gray-900 mb-2">
                   {service.title}
                 </h2>
-                <p className="text-sm leading-6 text-black dark:text-zinc-300">
+                <p className="text-sm leading-6 text-gray-900">
                   {service.description}
                 </p>
-                <span className="mt-3 inline-flex items-center text-sm font-medium text-sky-700 hover:text-sky-800 dark:text-sky-400 dark:hover:text-sky-300">
+                <span className="mt-3 inline-flex items-center text-sm font-medium text-sky-700 hover:text-sky-800">
                   Learn more
                 </span>
               </div>

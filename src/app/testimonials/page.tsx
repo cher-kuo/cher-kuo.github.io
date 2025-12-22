@@ -51,12 +51,12 @@ export default function TestimonialsPage() {
         />
         <div className="absolute inset-0 bg-white/70" />
       </div>
-      <div className="mx-auto max-w-4xl px-6 pt-32 pb-24 lg:px-8 lg:pt-40 lg:pb-28">
+      <div className="mx-auto max-w-4xl px-6 pt-40 pb-24 lg:px-8 lg:pt-48 lg:pb-28">
         <header className="mb-10">
-          <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50 sm:text-4xl mb-4">
+          <h1 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl mb-4">
             Testimonials
           </h1>
-          <p className="max-w-2xl text-lg leading-8 text-black dark:text-zinc-300">
+          <p className="max-w-2xl text-lg leading-8 text-gray-900">
             Hear from our patients about their experiences with Liv Motion Physiotherapy.
           </p>
         </header>
@@ -65,13 +65,13 @@ export default function TestimonialsPage() {
           {testimonials.map((testimonial) => (
             <article
               key={testimonial.id}
-              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm dark:border-zinc-800 dark:bg-zinc-900"
+              className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm"
             >
-              <blockquote className="text-lg leading-7 text-black dark:text-zinc-300 italic">
+              <blockquote className="text-lg leading-7 text-gray-900 italic">
                 &ldquo;{testimonial.quote}&rdquo;
               </blockquote>
               <div className="mt-4">
-                <p className="font-semibold text-black dark:text-zinc-50">
+                <p className="font-semibold text-gray-900">
                   — {testimonial.name}
                 </p>
               </div>
