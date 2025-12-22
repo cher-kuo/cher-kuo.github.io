@@ -31,7 +31,7 @@ export default function AboutPage() {
               Cherie Kuo, PT, PhD
             </p>
           </div>
-          <div className="space-y-8 text-lg leading-8 text-zinc-700 dark:text-zinc-300">
+          <div className="space-y-8 text-lg leading-8 text-black dark:text-zinc-300">
             <p>
               Cherie is an experienced physiotherapist specializing in the treatment of musculoskeletal, pelvic floor, and neurological conditions. With over a decade of experience in the hospital, research and clinical settings, Cherie has honed a deep understanding of the human body, particularly in managing musculoskeletal disorders, pelvic floor dysfunctions and neurological conditions.
             </p>

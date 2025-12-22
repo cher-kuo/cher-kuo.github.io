@@ -22,7 +22,7 @@ export default function ContactPage() {
           <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50 sm:text-4xl mb-4">
             Contact
           </h1>
-          <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-300">
+          <p className="max-w-2xl text-lg leading-8 text-black dark:text-zinc-300">
             Have questions about physiotherapy, your injury, or booking an appointment? Reach out and we will be happy to help you find the right next step.
           </p>
         </header>
@@ -32,7 +32,7 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold text-black dark:text-zinc-50">
               Get in touch
             </h2>
-            <div className="space-y-3 text-zinc-700 dark:text-zinc-300">
+            <div className="space-y-3 text-black dark:text-zinc-300">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
                   Phone
@@ -61,7 +61,7 @@ export default function ContactPage() {
                 <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
                   Hours
                 </p>
-                <p className="mt-1 text-lg text-zinc-700 dark:text-zinc-300">
+                <p className="mt-1 text-lg text-black dark:text-zinc-300">
                   Tuesday -Saturday: 11:00 AM -  8:00 PM
                 </p>
               </div>
@@ -72,7 +72,7 @@ export default function ContactPage() {
             <h2 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
               Booking information
             </h2>
-            <p className="text-base leading-7 text-zinc-700 dark:text-zinc-300">
+            <p className="text-base leading-7 text-black dark:text-zinc-300">
               You can book physiotherapy appointments online through our clinic partners below. If you are unsure which location or service is right for you, feel free to call or email first.
             </p>
             <div className="mt-4 flex flex-col gap-3 sm:flex-row">

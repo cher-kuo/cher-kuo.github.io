@@ -21,7 +21,7 @@ export default function ServicesPage() {
           <h1 className="text-3xl font-semibold tracking-tight text-black dark:text-zinc-50 sm:text-4xl mb-4">
             Services
           </h1>
-          <p className="max-w-2xl text-lg leading-8 text-zinc-700 dark:text-zinc-300">
+          <p className="max-w-2xl text-lg leading-8 text-black dark:text-zinc-300">
             We provide proffesional physiotherapy services across musculoskeletal injury, pelvic floor physiotherapy, neurological rehab, and pain management, tailored to your goals and lifestyle.
           </p>
         </header>
@@ -37,7 +37,7 @@ export default function ServicesPage() {
                 <h2 className="text-xl font-semibold text-black dark:text-zinc-50 mb-2">
                   {service.title}
                 </h2>
-                <p className="text-sm leading-6 text-zinc-700 dark:text-zinc-300">
+                <p className="text-sm leading-6 text-black dark:text-zinc-300">
                   {service.description}
                 </p>
                 <span className="mt-3 inline-flex items-center text-sm font-medium text-sky-700 hover:text-sky-800 dark:text-sky-400 dark:hover:text-sky-300">
