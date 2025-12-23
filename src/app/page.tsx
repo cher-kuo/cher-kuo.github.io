@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative flex h-screen w-full items-center justify-center bg-transparent font-sans">
+    <div className="relative flex h-screen w-full items-center justify-center font-sans" style={{ backgroundColor: '#4a6b8a' }}>
       <div className="absolute inset-0 -z-10 h-screen">
         <Image
           src="/images/hero-mountain-bg.jpg"
