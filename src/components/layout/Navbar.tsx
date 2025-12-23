@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import { FiMenu, FiX, FiPhone, FiMapPin, FiClock, FiMail } from 'react-icons/fi';
 
@@ -36,29 +37,28 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         {/* Top Bar */}
-        <div className="hidden md:flex justify-between items-center text-sm text-gray-600 mb-2">
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center">
-              <FiMail className="mr-1 text-primary-600" />
-              <span>livmophysio@gmail.com</span>
-            </div>
-            <div className="flex items-center">
-              <FiClock className="mr-1 text-primary-600" />
-              <span>Tues-Sat: 11:00 AM - 8:00 PM</span>
-            </div>
-          </div>
-          <div className="flex items-center">
-            <a href="tel:+16047717898" className="flex items-center text-primary-600 font-medium">
-              <FiPhone className="mr-1" />
-              (604) 771-7898
-            </a>
-          </div>
+        <div className="hidden md:flex justify-end items-center text-sm text-gray-600 mb-2 space-x-4">
+          <a href="mailto:livmophysio@gmail.com" className="flex items-center hover:text-primary-600 transition-colors">
+            <FiMail className="mr-1 text-primary-600" />
+            <span>livmophysio@gmail.com</span>
+          </a>
+          <a href="tel:+16047717898" className="flex items-center text-primary-600 font-medium">
+            <FiPhone className="mr-1" />
+            (604) 771-7898
+          </a>
         </div>
 
         {/* Main Navigation */}
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-2xl font-bold text-gray-900">
-            <span className="text-primary-600">Liv Motion </span>Physiotherapy
+          <Link href="/" className="flex items-center gap-3 text-2xl font-bold text-gray-900">
+            <Image
+              src="/images/logo-icon-v5.png"
+              alt="Liv Motion Physiotherapy Logo"
+              width={70}
+              height={70}
+              className="rounded-full"
+            />
+            <span><span className="text-primary-600">Liv Motion </span>Physiotherapy</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { ReactNode, useState } from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
@@ -87,9 +88,18 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="mb-8 md:mb-0">
-            <h3 className="text-2xl font-bold mb-4">
-              <span className="text-gray-900">Liv Motion </span><span className="text-gray-900">Physiotherapy</span>
-            </h3>
+            <div className="flex items-center gap-3 mb-4">
+              <Image
+                src="/images/logo-icon-v5.png"
+                alt="Liv Motion Physiotherapy Logo"
+                width={70}
+                height={70}
+                className="rounded-full"
+              />
+              <h3 className="text-2xl font-bold">
+                <span className="text-gray-900">Liv Motion </span><span className="text-gray-900">Physiotherapy</span>
+              </h3>
+            </div>
             <p className="text-gray-600 mb-4">
               Professional physiotherapy services to help you recover, rehabilitate, and return to your active lifestyle.
             </p>
