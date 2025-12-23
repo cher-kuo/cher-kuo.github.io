@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="relative flex min-h-screen w-full items-center justify-center bg-transparent font-sans">
-      <div className="absolute inset-0 -z-10">
+    <div className="relative flex h-screen w-full items-center justify-center bg-transparent font-sans">
+      <div className="absolute inset-0 -z-10 h-screen">
         <Image
-          src="/images/hero-physio-bg-v4.jpg"
+          src="/images/hero-mountain-bg.jpg"
           alt="background"
           fill
           className="object-cover"
@@ -14,7 +14,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-black/20" />
       </div>
 
-      <main className="relative flex min-h-screen w-full max-w-3xl flex-col items-center justify-center overflow-hidden px-16 bg-transparent sm:items-start">
+      <main className="relative flex h-screen w-full max-w-3xl flex-col items-center justify-center overflow-hidden px-16 bg-transparent sm:items-start">
         <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
           <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-white">
             Expert physiotherapy services.

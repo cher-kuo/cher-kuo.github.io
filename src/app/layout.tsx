@@ -75,7 +75,7 @@ export default function RootLayout({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </head>
-      <body className={`${inter.variable} ${poppins.variable} min-h-screen bg-slate-50 text-gray-900 antialiased`}>
+      <body className={`${inter.variable} ${poppins.variable} min-h-screen bg-stone-200 text-gray-900 antialiased`}>
         <Navbar />
         <main className="min-h-[calc(100vh-64px)]">
           {children}

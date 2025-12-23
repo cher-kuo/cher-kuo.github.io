@@ -83,14 +83,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-gray-700 text-white pt-16 pb-8">
+    <footer className="relative z-10 bg-stone-200 border-t border-gray-200 pt-10 pb-2">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           <div className="mb-8 md:mb-0">
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-primary-500">Liv</span> Motion Physiotherapy
+              <span className="text-gray-900">Liv Motion </span><span className="text-gray-900">Physiotherapy</span>
             </h3>
-            <p className="text-gray-200 mb-4">
+            <p className="text-gray-600 mb-4">
               Professional physiotherapy services to help you recover, rehabilitate, and return to your active lifestyle.
             </p>
             <div className="flex space-x-4 mt-6">
@@ -100,7 +100,7 @@ const Footer = () => {
                   href={social.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-200 hover:text-primary-400 transition-colors"
+                  className="text-gray-600 hover:text-primary-600 transition-colors"
                   aria-label={`Follow us on ${social.href.split('/')[2]}`}
                 >
                   {social.icon}
@@ -113,18 +113,18 @@ const Footer = () => {
             <div key={index} className="mb-4 md:mb-0">
               {/* Mobile: Collapsible header */}
               <button
-                className="md:hidden w-full flex justify-between items-center text-lg font-semibold text-white py-2"
+                className="md:hidden w-full flex justify-between items-center text-lg font-semibold text-gray-900 py-2"
                 onClick={() => toggleSection(section.title)}
               >
                 {section.title}
                 {expandedSections[section.title] ? (
-                  <FaChevronUp className="text-gray-400" />
+                  <FaChevronUp className="text-gray-600" />
                 ) : (
-                  <FaChevronDown className="text-gray-400" />
+                  <FaChevronDown className="text-gray-600" />
                 )}
               </button>
               {/* Desktop: Always visible header */}
-              <h4 className="hidden md:block text-lg font-semibold mb-4 text-white">{section.title}</h4>
+              <h4 className="hidden md:block text-lg font-semibold mb-4 text-gray-900">{section.title}</h4>
               {/* Mobile: Collapsible content / Desktop: Always visible */}
               <ul className={`space-y-2 overflow-hidden transition-all duration-300 ${
                 expandedSections[section.title] ? 'max-h-96 opacity-100 mt-2' : 'max-h-0 opacity-0 md:max-h-none md:opacity-100'
@@ -134,13 +134,13 @@ const Footer = () => {
                     {link.href ? (
                       <Link 
                         href={link.href} 
-                        className="text-gray-200 hover:text-primary-400 transition-colors flex items-start"
+                        className="text-gray-600 hover:text-primary-600 transition-colors flex items-start"
                       >
                         {link.icon && <span className="mt-1">{link.icon}</span>}
                         <span className={link.icon ? 'ml-2' : ''}>{link.name}</span>
                       </Link>
                     ) : (
-                      <span className="text-gray-200 flex items-start">
+                      <span className="text-gray-600 flex items-start">
                         {link.icon}
                         <span className="ml-2">{link.name}</span>
                       </span>
@@ -152,19 +152,19 @@ const Footer = () => {
           ))}
         </div>
 
-        <div className="border-t border-gray-600 pt-8">
+        <div className="border-t border-gray-200 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-200 text-sm mb-4 md:mb-0">
+            <p className="text-gray-600 text-sm mb-4 md:mb-0">
               &copy; {currentYear} Liv Motion Physiotherapy. All rights reserved.
             </p>
             <div className="flex space-x-6">
-              <Link href="/privacy-policy" className="text-gray-200 hover:text-white text-sm">
+              <Link href="/privacy-policy" className="text-gray-600 hover:text-primary-600 text-sm">
                 Privacy Policy
               </Link>
-              <Link href="/terms-of-service" className="text-gray-200 hover:text-white text-sm">
+              <Link href="/terms-of-service" className="text-gray-600 hover:text-primary-600 text-sm">
                 Terms of Service
               </Link>
-              <Link href="/sitemap.xml" className="text-gray-200 hover:text-white text-sm">
+              <Link href="/sitemap.xml" className="text-gray-600 hover:text-primary-600 text-sm">
                 Sitemap
               </Link>
             </div>
