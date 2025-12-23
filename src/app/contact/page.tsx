@@ -12,10 +12,10 @@ export default function ContactPage() {
           src="/images/watercolor-mountain-bg.jpg"
           alt="background"
           fill
-          className="object-cover object-top"
+          className="object-cover object-bottom"
           priority
         />
-        <div className="absolute inset-0 bg-white/70" />
+        <div className="absolute inset-0 bg-white/30" />
       </div>
       <div className="mx-auto max-w-4xl px-6 py-24 lg:px-8 lg:py-28">
         <header className="mb-8">
@@ -34,7 +34,7 @@ export default function ContactPage() {
             </h2>
             <div className="space-y-3 text-gray-900">
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+                <p className="text-sm font-semibold uppercase tracking-wide text-gray-700">
                   Phone
                 </p>
                 <a
@@ -46,7 +46,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+                <p className="text-sm font-semibold uppercase tracking-wide text-gray-700">
                   Email
                 </p>
                 <a
@@ -58,7 +58,7 @@ export default function ContactPage() {
               </div>
 
               <div>
-                <p className="text-sm font-semibold uppercase tracking-wide text-zinc-500 dark:text-zinc-400">
+                <p className="text-sm font-semibold uppercase tracking-wide text-gray-700">
                   Hours
                 </p>
                 <p className="mt-1 text-lg text-gray-900">

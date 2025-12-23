@@ -11,10 +11,10 @@ export default function ServicesPage() {
           src="/images/watercolor-mountain-bg.jpg"
           alt="background"
           fill
-          className="object-cover object-top"
+          className="object-cover object-bottom"
           priority
         />
-        <div className="absolute inset-0 bg-white/70" />
+        <div className="absolute inset-0 bg-white/30" />
       </div>
       <div className="mx-auto max-w-5xl px-6 pt-40 pb-24 lg:px-8 lg:pt-48 lg:pb-28">
         <header className="mb-10">

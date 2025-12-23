@@ -8,10 +8,10 @@ export default function AboutPage() {
           src="/images/watercolor-mountain-bg.jpg"
           alt="background"
           fill
-          className="object-cover object-top"
+          className="object-cover object-bottom"
           priority
         />
-        <div className="absolute inset-0 bg-white/70" />
+        <div className="absolute inset-0 bg-white/30" />
       </div>
       <div className="mx-auto max-w-4xl px-6 pt-32 pb-24 lg:px-8 lg:pt-40 lg:pb-28">
         <div className="flex flex-col gap-8 md:flex-row md:items-start">
