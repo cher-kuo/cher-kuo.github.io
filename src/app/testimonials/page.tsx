@@ -1,4 +1,20 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Patient Testimonials - Real Results & Reviews",
+  description: "Read testimonials from patients who have experienced relief and recovery with Liv Motion Physiotherapy. Real reviews about musculoskeletal injury treatment, pain management, and rehabilitation in Vancouver & Burnaby.",
+  keywords: ["physiotherapy reviews Vancouver", "patient testimonials Burnaby", "physiotherapist reviews", "Cherie Kuo reviews", "Liv Motion Physiotherapy testimonials"],
+  alternates: {
+    canonical: "/testimonials",
+  },
+  openGraph: {
+    title: "Patient Testimonials - Liv Motion Physiotherapy",
+    description: "Read real patient testimonials about their recovery journey with Liv Motion Physiotherapy in Vancouver & Burnaby.",
+    url: "https://www.cheriekuo.com/testimonials",
+    type: "website",
+  },
+};
 
 const testimonials = [
   {

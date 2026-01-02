@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { services } from "../services-data";
 
 export async function generateStaticParams() {
@@ -13,6 +14,40 @@ interface ServicePageProps {
   params: Promise<{
     slug: string;
   }>;
+}
+
+export async function generateMetadata({ params }: ServicePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const service = services.find((s) => s.slug === slug);
+
+  if (!service) {
+    return {
+      title: "Service Not Found",
+    };
+  }
+
+  const keywordMap: Record<string, string[]> = {
+    "physiotherapy": ["physiotherapy Vancouver", "physical therapy Burnaby", "evidence-based physiotherapy", "manual therapy", "exercise therapy"],
+    "musculoskeletal-injury": ["musculoskeletal injury treatment", "sports injury physiotherapy Vancouver", "joint pain treatment", "tendon injury rehab", "back pain physiotherapy Burnaby"],
+    "pelvic-floor-physiotherapy": ["pelvic floor physiotherapy Vancouver", "women's health physiotherapy", "incontinence treatment", "postpartum physiotherapy Burnaby", "pelvic pain treatment"],
+    "neuro-rehab": ["neurological rehabilitation Vancouver", "stroke rehab physiotherapy", "Parkinson's physiotherapy", "balance training", "gait rehabilitation Burnaby"],
+    "pain-management": ["chronic pain management Vancouver", "persistent pain treatment", "pain physiotherapy Burnaby", "pain science education", "movement therapy"],
+  };
+
+  return {
+    title: `${service.title} - Expert Treatment in Vancouver & Burnaby`,
+    description: `${service.description} Professional ${service.title.toLowerCase()} services with Cherie Kuo, PT, PhD at Liv Motion Physiotherapy.`,
+    keywords: keywordMap[slug] || ["physiotherapy Vancouver", "Liv Motion Physiotherapy"],
+    alternates: {
+      canonical: `/services/${slug}`,
+    },
+    openGraph: {
+      title: `${service.title} - Liv Motion Physiotherapy`,
+      description: service.description,
+      url: `https://www.cheriekuo.com/services/${slug}`,
+      type: "website",
+    },
+  };
 }
 
 export default async function ServiceDetailPage({ params }: ServicePageProps) {

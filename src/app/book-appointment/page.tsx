@@ -1,4 +1,20 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Book Appointment - Online Physiotherapy Booking",
+  description: "Book your physiotherapy appointment online with Cherie Kuo, PT, PhD. Available at Omni Massage & Wellness (Burnaby) and Mapleleaf Rehab (New Westminster). Easy online scheduling.",
+  keywords: ["book physiotherapy appointment", "online physiotherapy booking Vancouver", "Omni Massage Wellness booking", "Mapleleaf Rehab appointment", "physiotherapist Burnaby booking"],
+  alternates: {
+    canonical: "/book-appointment",
+  },
+  openGraph: {
+    title: "Book Your Physiotherapy Appointment - Liv Motion Physiotherapy",
+    description: "Book online with Cherie Kuo, PT, PhD at Omni Massage & Wellness or Mapleleaf Rehab. Easy scheduling for physiotherapy in Vancouver & Burnaby.",
+    url: "https://www.cheriekuo.com/book-appointment",
+    type: "website",
+  },
+};
 
 export default function BookAppointmentPage() {
   return (

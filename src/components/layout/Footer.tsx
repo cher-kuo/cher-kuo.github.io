@@ -96,7 +96,7 @@ const Footer = () => {
                 height={70}
                 className="rounded-full"
               />
-              <h3 className="text-2xl font-bold">
+              <h3 className="text-lg font-bold">
                 <span className="text-gray-900">Liv Motion </span><span className="text-gray-900">Physiotherapy</span>
               </h3>
             </div>

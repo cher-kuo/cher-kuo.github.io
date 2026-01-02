@@ -18,9 +18,12 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Liv Motion Physiotherapy - Expert Physiotherapy Services",
-  description: "Professional physiotherapy services to help you recover, rehabilitate, and return to your active lifestyle. Book an appointment today!",
-  keywords: ["physiotherapy", "physical therapy", "pain relief", "rehabilitation", "sports injury", "back pain", "neck pain", "pelvic health physiotherapy"],
+  title: {
+    default: "Liv Motion Physiotherapy - Expert Physiotherapy Services in Vancouver",
+    template: "%s | Liv Motion Physiotherapy",
+  },
+  description: "Expert physiotherapy services in Vancouver & Burnaby. Specializing in musculoskeletal injuries, pelvic floor physiotherapy, neurological rehab & pain management. Book with Cherie Kuo, PT, PhD today!",
+  keywords: ["physiotherapy Vancouver", "physiotherapist Burnaby", "pelvic floor physiotherapy", "musculoskeletal physiotherapy", "neurological rehabilitation", "physical therapy", "pain relief", "sports injury treatment", "back pain physiotherapy", "neck pain treatment", "dry needling", "IMS therapy", "post-surgical rehab", "chronic pain management", "Cherie Kuo physiotherapist"],
   authors: [{ name: 'Liv Motion Physiotherapy Team' }],
   creator: 'Liv Motion Physiotherapy',
   publisher: 'Liv Motion Physiotherapy',
@@ -29,8 +32,8 @@ export const metadata: Metadata = {
     canonical: '/',
   },
   openGraph: {
-    title: 'Liv Motion Physiotherapy - Expert Physiotherapy Services',
-    description: 'Professional physiotherapy services to help you recover, rehabilitate, and return to your active lifestyle.',
+    title: 'Liv Motion Physiotherapy - Expert Physiotherapy Services in Vancouver',
+    description: 'Expert physiotherapy in Vancouver & Burnaby. Musculoskeletal, pelvic floor & neurological rehab with Cherie Kuo, PT, PhD. Book your appointment today!',
     url: 'https://www.cheriekuo.com',
     siteName: 'Liv Motion Physiotherapy',
     locale: 'en_US',
@@ -46,8 +49,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Liv Motion Physiotherapy - Expert Physiotherapy Services',
-    description: 'Professional physiotherapy services to help you recover, rehabilitate, and return to your active lifestyle.',
+    title: 'Liv Motion Physiotherapy - Expert Physiotherapy Services in Vancouver',
+    description: 'Expert physiotherapy in Vancouver & Burnaby. Musculoskeletal, pelvic floor & neurological rehab with Cherie Kuo, PT, PhD.',
     creator: '@livmotionphysio',
     images: ['/images/og-image.jpg'],
   },
@@ -84,46 +87,79 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'MedicalClinic',
-              name: 'Liv Motion Physiotherapy',
-              image: 'https://www.cheriekuo.com/images/og-image.jpg',
-              '@id': 'https://www.cheriekuo.com',
-              url: 'https://www.cheriekuo.com',
-              telephone: '+1-604-771-7898',
-              address: {
-                '@type': 'PostalAddress',
-                streetAddress: '123 Health St',
-                addressLocality: 'San Francisco',
-                addressRegion: 'CA',
-                postalCode: '94110',
-                addressCountry: 'US',
-              },
-              geo: {
-                '@type': 'GeoCoordinates',
-                latitude: 37.7749,
-                longitude: -122.4194,
-              },
-              openingHoursSpecification: {
-                '@type': 'OpeningHoursSpecification',
-                dayOfWeek: [
-                  // 'Monday',
-                  'Tuesday',
-                  'Wednesday',
-                  'Thursday',
-                  'Friday',
-                  'Saturday',
+            __html: JSON.stringify([
+              {
+                '@context': 'https://schema.org',
+                '@type': 'MedicalBusiness',
+                '@id': 'https://www.cheriekuo.com/#organization',
+                name: 'Liv Motion Physiotherapy',
+                description: 'Expert physiotherapy services in Vancouver & Burnaby specializing in musculoskeletal injuries, pelvic floor physiotherapy, neurological rehabilitation, and pain management.',
+                image: 'https://www.cheriekuo.com/images/og-image.jpg',
+                url: 'https://www.cheriekuo.com',
+                telephone: '+1-604-771-7898',
+                email: 'livmophysio@gmail.com',
+                priceRange: '$$',
+                areaServed: [
+                  { '@type': 'City', name: 'Vancouver', '@id': 'https://www.wikidata.org/wiki/Q24639' },
+                  { '@type': 'City', name: 'Burnaby', '@id': 'https://www.wikidata.org/wiki/Q170475' },
+                  { '@type': 'City', name: 'New Westminster', '@id': 'https://www.wikidata.org/wiki/Q170478' },
                 ],
-                opens: '11:00',
-                closes: '20:00',
+                openingHoursSpecification: {
+                  '@type': 'OpeningHoursSpecification',
+                  dayOfWeek: ['Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+                  opens: '11:00',
+                  closes: '20:00',
+                },
+                sameAs: [
+                  'https://www.facebook.com/profile.php?id=61561815472137',
+                  'https://www.instagram.com/livmotion.physio',
+                  'https://www.linkedin.com/in/cherie-k-7016b015/',
+                ],
+                hasOfferCatalog: {
+                  '@type': 'OfferCatalog',
+                  name: 'Physiotherapy Services',
+                  itemListElement: [
+                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Physiotherapy' } },
+                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Musculoskeletal Injury Treatment' } },
+                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pelvic Floor Physiotherapy' } },
+                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Neurological Rehabilitation' } },
+                    { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pain Management' } },
+                  ],
+                },
               },
-              sameAs: [
-                // 'https://www.facebook.com/elitephysiocare',
-                'https://www.instagram.com/livmotion.physio',
-                // 'https://www.linkedin.com/company/elitephysiocare',
-              ],
-            }),
+              {
+                '@context': 'https://schema.org',
+                '@type': 'Person',
+                '@id': 'https://www.cheriekuo.com/#person',
+                name: 'Cherie Kuo',
+                jobTitle: 'Physiotherapist',
+                honorificSuffix: 'PT, PhD',
+                description: 'Experienced physiotherapist specializing in musculoskeletal, pelvic floor, and neurological conditions with over a decade of hospital, research, and clinical experience.',
+                worksFor: { '@id': 'https://www.cheriekuo.com/#organization' },
+                knowsAbout: [
+                  'Physiotherapy',
+                  'Musculoskeletal Rehabilitation',
+                  'Pelvic Floor Physiotherapy',
+                  'Neurological Rehabilitation',
+                  'Dry Needling',
+                  'IMS Therapy',
+                  'Pain Management',
+                ],
+              },
+              {
+                '@context': 'https://schema.org',
+                '@type': 'WebSite',
+                '@id': 'https://www.cheriekuo.com/#website',
+                url: 'https://www.cheriekuo.com',
+                name: 'Liv Motion Physiotherapy',
+                publisher: { '@id': 'https://www.cheriekuo.com/#organization' },
+                potentialAction: {
+                  '@type': 'SearchAction',
+                  target: 'https://www.cheriekuo.com/services?q={search_term_string}',
+                  'query-input': 'required name=search_term_string',
+                },
+              },
+            ]),
           }}
         />
       </body>

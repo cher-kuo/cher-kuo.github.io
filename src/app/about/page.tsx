@@ -1,4 +1,20 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "About Cherie Kuo, PT, PhD - Experienced Physiotherapist",
+  description: "Meet Cherie Kuo, PT, PhD - an experienced physiotherapist specializing in musculoskeletal, pelvic floor, and neurological conditions. Over a decade of hospital, research, and clinical experience in Vancouver & Burnaby.",
+  keywords: ["Cherie Kuo physiotherapist", "physiotherapist Vancouver", "pelvic floor specialist", "neurological physiotherapy", "musculoskeletal expert", "dry needling certified", "IMS therapy"],
+  alternates: {
+    canonical: "/about",
+  },
+  openGraph: {
+    title: "About Cherie Kuo, PT, PhD - Liv Motion Physiotherapy",
+    description: "Meet Cherie Kuo, PT, PhD - an experienced physiotherapist specializing in musculoskeletal, pelvic floor, and neurological conditions.",
+    url: "https://www.cheriekuo.com/about",
+    type: "profile",
+  },
+};
 
 export default function AboutPage() {
   return (

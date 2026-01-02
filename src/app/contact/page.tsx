@@ -1,4 +1,20 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact Us - Book Your Physiotherapy Appointment",
+  description: "Contact Liv Motion Physiotherapy in Vancouver & Burnaby. Call (604) 771-7898 or email livmophysio@gmail.com. Open Tuesday-Saturday 11AM-8PM. Book online at Omni Massage & Wellness or Mapleleaf Rehab.",
+  keywords: ["contact physiotherapist Vancouver", "book physiotherapy appointment Burnaby", "Liv Motion Physiotherapy contact", "physiotherapy clinic hours"],
+  alternates: {
+    canonical: "/contact",
+  },
+  openGraph: {
+    title: "Contact Liv Motion Physiotherapy",
+    description: "Get in touch with Liv Motion Physiotherapy. Call (604) 771-7898 or book online. Located in Vancouver & Burnaby.",
+    url: "https://www.cheriekuo.com/contact",
+    type: "website",
+  },
+};
 
 export default function ContactPage() {
   const phoneDisplay = "(604) 771-7898";

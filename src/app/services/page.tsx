@@ -1,6 +1,22 @@
 import Link from "next/link";
 import Image from "next/image";
+import type { Metadata } from "next";
 import { services } from "./services-data";
+
+export const metadata: Metadata = {
+  title: "Physiotherapy Services - Musculoskeletal, Pelvic Floor & Neuro Rehab",
+  description: "Comprehensive physiotherapy services in Vancouver & Burnaby: musculoskeletal injury treatment, pelvic floor physiotherapy, neurological rehabilitation, and chronic pain management. Personalized care plans.",
+  keywords: ["physiotherapy services Vancouver", "musculoskeletal physiotherapy", "pelvic floor physiotherapy Burnaby", "neurological rehabilitation", "pain management", "sports injury treatment", "post-surgical rehab"],
+  alternates: {
+    canonical: "/services",
+  },
+  openGraph: {
+    title: "Physiotherapy Services - Liv Motion Physiotherapy",
+    description: "Comprehensive physiotherapy services: musculoskeletal injury, pelvic floor, neurological rehab, and pain management in Vancouver & Burnaby.",
+    url: "https://www.cheriekuo.com/services",
+    type: "website",
+  },
+};
 
 export default function ServicesPage() {
 
