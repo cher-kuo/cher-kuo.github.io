@@ -36,7 +36,7 @@ export const blogPosts: BlogPost[] = [
     date: "2024-12-10",
     author: "Cherie Kuo, PT, PhD",
     category: "Treatment Techniques",
-    image: "/images/blog-needle.jpg",
+    image: "/images/blog-needle2.jpg",
     body: [
       "If you've been dealing with persistent muscle pain or tightness, you may have heard about dry needling (or Intramuscular Stimulation/IMS) as a treatment option. This technique has gained popularity in physiotherapy for its effectiveness in treating muscle-related pain.",
       "**What is Dry Needling?**",

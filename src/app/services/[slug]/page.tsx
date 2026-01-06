@@ -80,6 +80,22 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
           </p>
         </header>
 
+        {service.conditionsWeTreat && service.conditionsWeTreat.length > 0 && (
+          <section className="mb-8">
+            <h2 className="text-xl font-semibold text-gray-900 mb-4">
+              Conditions We Treat
+            </h2>
+            <ul className="space-y-3 text-lg leading-8 text-gray-900">
+              {service.conditionsWeTreat.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="text-primary-600 mt-1">•</span>
+                  <span>{item}</span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
         <section className="space-y-4 text-lg leading-8 text-gray-900">
           {(service.body ?? []).map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
