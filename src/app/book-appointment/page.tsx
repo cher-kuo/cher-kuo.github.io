@@ -35,13 +35,13 @@ export default function BookAppointmentPage() {
             Book an Appointment
           </h1>
           <p className="max-w-2xl text-lg leading-8 text-gray-900">
-            You can book one-on-one physiotherapy sessions with Cherie through our trusted clinic partners. Choose the
-            location that is most convenient for you, or contact us if you are unsure which option is best.
+            You can book one-on-one physiotherapy sessions with Cherie through our trusted clinic partners. Please choose the
+            location that is most convenient for you below, or contact us if you are unsure which option is best.
           </p>
         </header>
 
         <section className="space-y-6">
-          <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+          <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center">
             <h2 className="text-xl font-semibold text-gray-900 mb-2">
               Omni Massage &amp; Wellness
             </h2>
@@ -53,13 +53,14 @@ export default function BookAppointmentPage() {
               href="https://omnimassageandwellness.janeapp.com/#/staff_member/14"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-base font-bold text-green-600 hover:underline"
+              className="inline-flex flex-col items-center justify-center rounded-full bg-green-600 px-10 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0"
             >
-              Book at Omni Massage &amp; Wellness
+              <span className="text-center font-bold">Book at Omni</span>
+              <span className="text-center text-sm font-bold">(Burnaby)</span>
             </a>
           </article>
 
-          <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm">
+          <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center">
             <h2 className="text-xl font-semibold text-gray-900 mb-2">
               Mapleleaf Rehab
             </h2>
@@ -71,9 +72,10 @@ export default function BookAppointmentPage() {
               href="https://mapleleaf-rehab.janeapp.com/#/staff_member/12"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center text-base font-bold text-blue-900 hover:underline"
+              className="inline-flex flex-col items-center justify-center rounded-full bg-blue-900 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-blue-800 hover:-translate-y-0.5 active:translate-y-0"
             >
-              Book at Mapleleaf Rehab
+              <span className="text-center font-bold">Book at Mapleleaf</span>
+              <span className="text-center text-sm font-bold">(New West)</span>
             </a>
           </article>
 

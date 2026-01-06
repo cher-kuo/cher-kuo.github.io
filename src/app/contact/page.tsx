@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 };
 
 export default function ContactPage() {
-  const phoneDisplay = "(604) 771-7898";
+  const phoneDisplay = "+1 (604) 771-7898";
   const phoneHref = "tel:+16047717898";
   const email = "livmophysio@gmail.com";
 
@@ -96,17 +96,19 @@ export default function ContactPage() {
                 href="https://omnimassageandwellness.janeapp.com/#/staff_member/14"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-green-600 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex flex-col items-center justify-center rounded-full bg-green-600 px-10 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0"
               >
-                Book at Omni
+                <span className="text-center font-bold">Book at Omni</span>
+                <span className="text-center text-sm font-bold">(Burnaby)</span>
               </a>
               <a
                 href="https://mapleleaf-rehab.janeapp.com/#/staff_member/12"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-full bg-blue-900 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-blue-800 hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex flex-col items-center justify-center rounded-full bg-blue-900 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-blue-800 hover:-translate-y-0.5 active:translate-y-0"
               >
-                Book at Mapleleaf
+                <span className="text-center font-bold">Book at Mapleleaf</span>
+                <span className="text-center text-sm font-bold">(New West)</span>
               </a>
             </div>
           </div>

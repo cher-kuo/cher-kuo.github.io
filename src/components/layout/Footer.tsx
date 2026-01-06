@@ -34,6 +34,7 @@ const Footer = () => {
         { name: 'Home', href: '/' },
         { name: 'About', href: '/about' },
         { name: 'Services', href: '/services' },
+        { name: 'Blog', href: '/blog' },
         { name: 'Testimonials', href: '/testimonials' },
         { name: 'Contact', href: '/contact' },
         { name: 'Book Appointment', href: '/book-appointment' },
@@ -58,7 +59,7 @@ const Footer = () => {
         //   href: 'https://maps.google.com?q=123+Health+St,+San+Francisco,+CA+94110'
         // },
         { 
-          name: '(604) 771-7898', 
+          name: '+1 (604) 771-7898', 
           icon: <FaPhoneAlt className="inline mr-2 text-primary-600" />,
           href: 'tel:+16047717898'
         },

@@ -25,6 +25,7 @@ const Navbar = () => {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'About', href: '/about' },
+    { name: 'Blog', href: '/blog' },
     { name: 'Testimonials', href: '/testimonials' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -44,7 +45,7 @@ const Navbar = () => {
           </a>
           <a href="tel:+16047717898" className="flex items-center text-primary-600 font-medium">
             <FiPhone className="mr-1" />
-            (604) 771-7898
+            +1 (604) 771-7898
           </a>
         </div>
 
