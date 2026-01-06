@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { ReactNode, useState } from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaChevronDown, FaChevronUp } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaYoutube, FaMapMarkerAlt, FaPhoneAlt, FaEnvelope, FaClock, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 
 interface FooterLink {
   name: string;
@@ -82,6 +82,7 @@ const Footer = () => {
     // { icon: <FaTwitter size={20} />, href: 'https://twitter.com/elitephysiocare' },
     { icon: <FaInstagram size={20} />, href: 'https://instagram.com/livmotion.physio' },
     { icon: <FaLinkedin size={20} />, href: 'https://www.linkedin.com/in/cherie-k-7016b015/' },
+    { icon: <FaYoutube size={20} />, href: 'https://www.youtube.com/@Physio.CherieK' },
   ];
 
   return (
