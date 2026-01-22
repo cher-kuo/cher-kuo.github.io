@@ -113,4 +113,26 @@ export const services: Service[] = [
       "Practical tools for pacing and stress management to improve your quality of life.",
     ],
   },
+  {
+    title: "In-Home Physiotherapy",
+    slug: "in-home-physiotherapy",
+    description:
+      "Convenient physiotherapy services delivered in the comfort of your own home, ideal for those with mobility challenges or busy schedules.",
+    conditionsWeTreat: [
+      "Post-surgical rehabilitation",
+      "Mobility limitations",
+      "Fall prevention",
+      "Chronic conditions requiring ongoing care",
+      "Neurological conditions",
+    ],
+    body: [
+      "We bring expert physiotherapy care directly to you, eliminating the need for travel and allowing treatment in a familiar environment.",
+    ],
+    whatToExpect: [
+      "A comprehensive in-home assessment of your mobility, strength, and functional abilities.",
+      "Treatment tailored to your home environment, including exercises you can do safely at home.",
+      "Guidance on home modifications and equipment to support your recovery and safety.",
+      "Flexible scheduling to accommodate your needs.",
+    ],
+  },
 ];

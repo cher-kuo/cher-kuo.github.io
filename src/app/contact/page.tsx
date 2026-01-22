@@ -89,7 +89,7 @@ export default function ContactPage() {
               Booking information
             </h2>
             <p className="text-base leading-7 text-gray-900">
-              You can book physiotherapy appointments online through our clinic partners below. If you are unsure which location or service is right for you, feel free to call or email first.
+              You can book physiotherapy appointments online through our clinic partners below. If you are unsure which location or service is right for you or if you require in-home services, please feel free to email or call us.
             </p>
             <div className="mt-4 flex flex-col gap-3 sm:flex-row">
               <a

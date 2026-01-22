@@ -79,7 +79,24 @@ export default function BookAppointmentPage() {
             </a>
           </article>
 
-          <p className="text-sm leading-6 text-gray-900">
+          <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center">
+            <h2 className="text-xl font-semibold text-gray-900 mb-2">
+              In-Home Physiotherapy
+            </h2>
+            <p className="text-sm leading-6 text-gray-900 mb-3">
+              Please email us or give us a call if you require in-home physiotherapy sessions.
+            </p>
+            <div className="flex flex-col gap-3 items-center">
+              <div className="inline-flex items-center justify-center rounded-full bg-gray-700 px-6 py-3 text-base font-semibold text-white shadow-md w-fit">
+                <span className="font-bold">Email us at <span className="underline">livmophysio@gmail.com</span></span>
+              </div>
+              <div className="inline-flex items-center justify-center rounded-full bg-gray-700 px-6 py-3 text-base font-semibold text-white shadow-md w-fit">
+                <span className="font-bold">Call us at +1-604-771-7898</span>
+              </div>
+            </div>
+          </article>
+
+          <p className="text-lg leading-8 text-gray-900">
             If you have questions before booking, you can also visit our <a href="/contact" className="text-primary-600 hover:text-primary-700">Contact</a> page to call or email us directly.
           </p>
         </section>
