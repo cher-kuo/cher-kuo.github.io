@@ -32,8 +32,8 @@ const Footer = () => {
       title: 'Quick Links',
       links: [
         { name: 'Home', href: '/' },
-        { name: 'About', href: '/about' },
         { name: 'Services', href: '/services' },
+        { name: 'About', href: '/about' },
         { name: 'Blog', href: '/blog' },
         { name: 'Testimonials', href: '/testimonials' },
         { name: 'Contact', href: '/contact' },
