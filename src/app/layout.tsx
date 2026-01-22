@@ -76,7 +76,8 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${poppins.variable} font-sans`}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
       </head>
       <body className={`${inter.variable} ${poppins.variable} min-h-screen bg-stone-200 text-gray-900 antialiased`}>
         <Navbar />
