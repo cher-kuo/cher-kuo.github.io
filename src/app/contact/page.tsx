@@ -51,18 +51,6 @@ export default function ContactPage() {
             <div className="space-y-3 text-gray-900">
               <div>
                 <p className="text-sm font-semibold uppercase tracking-wide text-gray-700">
-                  Phone
-                </p>
-                <a
-                  href={phoneHref}
-                  className="mt-1 inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-700"
-                >
-                  {phoneDisplay}
-                </a>
-              </div>
-
-              <div>
-                <p className="text-sm font-semibold uppercase tracking-wide text-gray-700">
                   Email
                 </p>
                 <a
@@ -70,6 +58,18 @@ export default function ContactPage() {
                   className="mt-1 inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-700 break-all"
                 >
                   {email}
+                </a>
+              </div>
+
+              <div>
+                <p className="text-sm font-semibold uppercase tracking-wide text-gray-700">
+                  Phone
+                </p>
+                <a
+                  href={phoneHref}
+                  className="mt-1 inline-flex items-center text-lg font-medium text-primary-600 hover:text-primary-700"
+                >
+                  {phoneDisplay}
                 </a>
               </div>
 
@@ -89,7 +89,7 @@ export default function ContactPage() {
               Booking information
             </h2>
             <p className="text-base leading-7 text-gray-900">
-              You can book physiotherapy appointments online through our clinic partners below. If you are unsure which location or service is right for you or if you require in-home services, please feel free to email or call us.
+              You can book physiotherapy appointments online through our clinic partners below. If you are unsure which location/service is right for you or if you require in-home services, please feel free to email or call us.
             </p>
             <div className="mt-4 flex flex-col gap-3 sm:flex-row">
               <a
