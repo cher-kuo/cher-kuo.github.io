@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Book Your Physiotherapy Appointment - Liv Motion Physiotherapy",
-    description: "Book online with Cherie Kuo, PT, PhD at Omni Massage & Wellness or Mapleleaf Rehab. Easy scheduling for physiotherapy in Vancouver & Burnaby.",
+    description: "Book online with Cherie Kuo, PT, PhD at Burnaby or New Westminster. Easy scheduling for physiotherapy in Vancouver & Burnaby.",
     url: "https://www.cheriekuo.com/book-appointment",
     type: "website",
   },
@@ -43,7 +43,7 @@ export default function BookAppointmentPage() {
         <section className="space-y-6">
           <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center">
             <h2 className="text-xl font-semibold text-gray-900 mb-2">
-              Omni Massage &amp; Wellness
+              Burnaby
             </h2>
             <p className="text-sm leading-6 text-gray-900 mb-3">
               Click below to book if you prefer appointments at Omni Massage &amp; Wellness in Burnaby. You&apos;ll see real-time
@@ -55,14 +55,13 @@ export default function BookAppointmentPage() {
               rel="noopener noreferrer"
               className="inline-flex flex-col items-center justify-center rounded-full bg-green-600 px-10 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0"
             >
-              <span className="text-center font-bold">Book at Omni</span>
-              <span className="text-center text-sm font-bold">(Burnaby)</span>
+              <span className="text-center font-bold">Book at Burnaby</span>
             </a>
           </article>
 
           <article className="rounded-2xl border border-zinc-200 bg-white p-6 shadow-sm text-center">
             <h2 className="text-xl font-semibold text-gray-900 mb-2">
-              Mapleleaf Rehab
+              New Westminster
             </h2>
             <p className="text-sm leading-6 text-gray-900 mb-3">
               Click below to book for appointments at Mapleleaf Rehab in New Westminster. Use the online booking link to select the
@@ -74,8 +73,7 @@ export default function BookAppointmentPage() {
               rel="noopener noreferrer"
               className="inline-flex flex-col items-center justify-center rounded-full bg-blue-900 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-blue-800 hover:-translate-y-0.5 active:translate-y-0"
             >
-              <span className="text-center font-bold">Book at Mapleleaf</span>
-              <span className="text-center text-sm font-bold">(New West)</span>
+              <span className="text-center font-bold">Book at New West</span>
             </a>
           </article>
 

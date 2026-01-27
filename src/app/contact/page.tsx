@@ -98,8 +98,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="inline-flex flex-col items-center justify-center rounded-full bg-green-600 px-10 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span className="text-center font-bold">Book at Omni</span>
-                <span className="text-center text-sm font-bold">(Burnaby)</span>
+                <span className="text-center font-bold">Book at Burnaby</span>
               </a>
               <a
                 href="https://mapleleaf-rehab.janeapp.com/#/staff_member/12"
@@ -107,8 +106,7 @@ export default function ContactPage() {
                 rel="noopener noreferrer"
                 className="inline-flex flex-col items-center justify-center rounded-full bg-blue-900 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-blue-800 hover:-translate-y-0.5 active:translate-y-0"
               >
-                <span className="text-center font-bold">Book at Mapleleaf</span>
-                <span className="text-center text-sm font-bold">(New West)</span>
+                <span className="text-center font-bold">Book at New West</span>
               </a>
             </div>
           </div>
