@@ -19,8 +19,8 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <div className="relative flex min-h-[100svh] w-full items-center justify-center font-sans" style={{ backgroundColor: '#d1d5db' }}>
-        <div className="absolute inset-0 z-0 min-h-[100svh]">
+      <div className="relative flex min-h-screen w-full items-center justify-center font-sans" style={{ backgroundColor: '#d1d5db' }}>
+        <div className="absolute inset-0 z-0">
           <Image
             src="/images/hero-mountain-bg2.jpeg"
             alt="Mountain landscape background for Liv Motion Physiotherapy"
@@ -36,12 +36,12 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/20" />
         </div>
 
-        <main className="relative z-10 flex min-h-[100svh] w-full max-w-3xl flex-col items-center justify-start px-6 pt-32 pb-16 bg-transparent sm:justify-center sm:items-start sm:px-16 sm:pt-48 sm:pb-16">
-          <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-            <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-white">
+        <main className="relative z-10 flex w-full max-w-3xl flex-col items-center justify-start px-6 pt-28 pb-20 bg-transparent sm:min-h-screen sm:justify-center sm:items-start sm:px-16 sm:pt-48 sm:pb-16">
+          <div className="flex flex-col items-center gap-4 text-center sm:gap-6 sm:items-start sm:text-left">
+            <h1 className="max-w-xs text-2xl font-semibold leading-8 tracking-tight text-white sm:text-3xl sm:leading-10">
               Expert physiotherapy services.
             </h1>
-            <p className="max-w-md text-xl leading-8 text-zinc-100">
+            <p className="max-w-md text-base leading-7 text-zinc-100 sm:text-xl sm:leading-8">
               Liv Motion Physiotherapy offers comprehensive assessment and tailored treatment to meet your rehab goals. We specialize in treating musculoskeletal injuries, women's pelvic floor dysfunction, neurological rehab, and pain management. Cherie Kuo, Founder of Liv Motion Physiotherapy, practices at two convenient locations (Burnaby and New Westminster), and can deliver services at your home. Book with Cherie today!
             </p>
           </div>
