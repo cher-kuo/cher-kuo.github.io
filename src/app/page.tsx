@@ -36,7 +36,7 @@ export default function Home() {
           <div className="absolute inset-0 bg-black/20" />
         </div>
 
-        <main className="relative z-10 flex min-h-[100svh] w-full max-w-3xl flex-col items-center justify-center px-6 py-16 bg-transparent sm:items-start sm:px-16 sm:pt-48 sm:pb-16">
+        <main className="relative z-10 flex min-h-[100svh] w-full max-w-3xl flex-col items-center justify-start px-6 pt-32 pb-16 bg-transparent sm:justify-center sm:items-start sm:px-16 sm:pt-48 sm:pb-16">
           <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
             <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-white">
               Expert physiotherapy services.
