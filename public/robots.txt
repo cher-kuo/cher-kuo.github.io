@@ -3,8 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://cheriekuo.com
+Host: https://www.cheriekuo.com
 
 # Sitemaps
-Sitemap: https://cheriekuo.com/sitemap.xml
-Sitemap: https://cheriekuo.com/server-sitemap.xml
+Sitemap: https://www.cheriekuo.com/sitemap.xml

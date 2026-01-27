@@ -40,6 +40,13 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
       type: "article",
       publishedTime: post.date,
       authors: [post.author],
+      images: post.image ? [{ url: post.image, width: 800, height: 400, alt: post.title }] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: post.title,
+      description: post.excerpt,
+      images: post.image ? [post.image] : undefined,
     },
   };
 }
@@ -61,19 +68,49 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     return notFound();
   }
 
+  const articleStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    headline: post.title,
+    description: post.excerpt,
+    image: post.image ? `https://www.cheriekuo.com${post.image}` : undefined,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      "@type": "Person",
+      name: "Cherie Kuo",
+      jobTitle: "Physiotherapist",
+      honorificSuffix: "PT, PhD",
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Liv Motion Physiotherapy",
+      url: "https://www.cheriekuo.com",
+    },
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": `https://www.cheriekuo.com/blog/${slug}`,
+    },
+  };
+
   return (
-    <main className="relative min-h-screen flex items-center justify-center">
-      <div className="absolute inset-0 -z-10">
-        <Image
-          src="/images/watercolor-mountain-bg.jpg"
-          alt="background"
-          fill
-          className="object-cover object-top"
-          priority
-        />
-        <div className="absolute inset-0 bg-white/70" />
-      </div>
-      <div className="mx-auto max-w-3xl px-6 pt-40 pb-16 lg:px-8 lg:pt-48 lg:pb-20">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }}
+      />
+      <main className="relative min-h-screen flex items-center justify-center">
+        <div className="absolute inset-0 -z-10">
+          <Image
+            src="/images/watercolor-mountain-bg.jpg"
+            alt="background"
+            fill
+            className="object-cover object-top"
+            priority
+          />
+          <div className="absolute inset-0 bg-white/70" />
+        </div>
+        <div className="mx-auto max-w-3xl px-6 pt-40 pb-16 lg:px-8 lg:pt-48 lg:pb-20">
         <header className="mb-8">
           <div className="flex items-center gap-2 text-sm text-gray-500 mb-4">
             <span className="inline-flex items-center rounded-full bg-primary-100 px-2.5 py-0.5 text-xs font-medium text-primary-800">
@@ -148,6 +185,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
           </Link>
         </div>
       </div>
-    </main>
+      </main>
+    </>
   );
 }

@@ -1,4 +1,20 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Newsletter Signup - Physiotherapy Tips & Health Insights",
+  description: "Subscribe to Liv Motion Physiotherapy's newsletter for expert physiotherapy tips, exercises, injury prevention advice, and wellness insights delivered to your inbox.",
+  keywords: ["physiotherapy newsletter", "health tips newsletter", "exercise tips", "injury prevention", "wellness advice Vancouver"],
+  alternates: {
+    canonical: "/newsletter",
+  },
+  openGraph: {
+    title: "Newsletter Signup - Liv Motion Physiotherapy",
+    description: "Subscribe for expert physiotherapy tips, exercises, and wellness advice from Cherie Kuo, PT, PhD.",
+    url: "https://www.cheriekuo.com/newsletter",
+    type: "website",
+  },
+};
 
 export default function NewsletterPage() {
   return (

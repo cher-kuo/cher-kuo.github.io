@@ -1,4 +1,20 @@
 import Image from "next/image";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Liv Motion Physiotherapy - Expert Physiotherapy in Vancouver & Burnaby",
+  description: "Expert physiotherapy services in Vancouver & Burnaby. Specializing in musculoskeletal injuries, pelvic floor physiotherapy, neurological rehab & pain management. Book with Cherie Kuo, PT, PhD today!",
+  keywords: ["physiotherapy Vancouver", "physiotherapist Burnaby", "Cherie Kuo physiotherapist", "pelvic floor physiotherapy", "musculoskeletal physiotherapy", "pain management Vancouver"],
+  alternates: {
+    canonical: "/",
+  },
+  openGraph: {
+    title: "Liv Motion Physiotherapy - Expert Physiotherapy in Vancouver & Burnaby",
+    description: "Expert physiotherapy services with Cherie Kuo, PT, PhD. Book your appointment at Omni Massage & Wellness or Mapleleaf Rehab today!",
+    url: "https://www.cheriekuo.com",
+    type: "website",
+  },
+};
 
 export default function Home() {
   return (
@@ -7,7 +23,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0 h-screen">
           <Image
             src="/images/hero-mountain-bg2.jpeg"
-            alt="background"
+            alt="Mountain landscape background for Liv Motion Physiotherapy"
             fill
             className="object-cover"
             priority
