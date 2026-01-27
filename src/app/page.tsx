@@ -42,7 +42,7 @@ export default function Home() {
               Expert physiotherapy services.
             </h1>
             <p className="max-w-md text-xl leading-8 text-zinc-100">
-              Looking for an expert physiotherapist to help your recovery? Cherie Kuo specilize in musculoskeletal injuries, women's pelvic floor physiotherapy, neurological rehab, and pain management. She currently practices at two convenient locations (Burnaby and New Westminster), and can deliver services at your home. Book with Cherie today!
+              Looking for an expert physiotherapist to help your recovery? We specialize in musculoskeletal and sports injuries, women's pelvic floor physiotherapy, neurological rehab, and pain management. Cherie Kuo, Founder of Liv Motion Physiotherapy, practices at two convenient locations (Burnaby and New Westminster), and can deliver services at your home. Book with Cherie today!
             </p>
           </div>
           <div className="mt-8 flex flex-col gap-4 text-base font-medium sm:flex-row">
@@ -55,6 +55,52 @@ export default function Home() {
           </div>
         </main>
       </div>
+
+      <section className="bg-gray-200 py-16">
+        <div className="container mx-auto px-6">
+          <div className="mx-auto max-w-5xl grid gap-10 md:grid-cols-2 md:items-center">
+            <div>
+              <div className="mb-6 flex justify-center md:justify-start">
+                <Image
+                  src="/images/cherie-headshot3.jpg"
+                  alt="Portrait of Cherie Kuo, physiotherapist at Liv Motion Physiotherapy"
+                  width={160}
+                  height={200}
+                  className="h-auto w-28 rounded-xl object-cover shadow-lg sm:w-32"
+                  priority
+                />
+              </div>
+              <h2 className="text-2xl font-semibold tracking-tight text-gray-900 mb-4">
+                About Cherie
+              </h2>
+              <p className="text-lg leading-8 text-gray-700">
+                Cherie Kuo, PT, PhD is a dedicated physiotherapist with over a decade of experience in physiotherapy. She holds a PhD from Columbia University and provides evidence-based care for musculoskeletal and sports injuries, women’s pelvic floor dysfunction, neurological rehab, and pain management.
+              </p>
+              <div className="mt-6">
+                <a
+                  href="/about"
+                  className="text-sm font-medium text-sky-700 hover:text-sky-800"
+                >
+                  Learn more about Cherie →
+                </a>
+              </div>
+            </div>
+            <div>
+              <div className="rounded-2xl border border-zinc-200 bg-white p-8 shadow-sm">
+                <h3 className="text-xl font-semibold text-gray-900 mb-4">
+                  Areas of Expertise
+                </h3>
+                <ul className="space-y-3 text-lg text-gray-700">
+                  <li>Musculoskeletal and sports injury rehabilitation</li>
+                  <li>Women’s pelvic floor dysfunction</li>
+                  <li>Neurological rehabilitation</li>
+                  <li>Acute and chronic pain management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-white py-16">
         <div className="container mx-auto px-6">

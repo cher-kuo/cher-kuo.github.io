@@ -49,13 +49,16 @@ export default function AboutPage() {
               About Us
             </h1>
             <p className="text-gray-900">
-              Cherie is an experienced physiotherapist with over a decade of experience in the hospital, research and clinical settings. She holds a PhD in Kinesiology with specialization in neuroscience from Columbia University. She has honed a deep understanding of the human body, particularly in managing musculoskeletal disorders, pelvic floor dysfunctions and neurological conditions.
+              Cherie is a dedicated physiotherapist with over a decade of experience in the hospital, research and clinical settings. She holds a PhD in Kinesiology with specialization in neuroscience from Columbia University. She has honed a deep understanding of the human body, particularly in managing musculoskeletal disorders, pelvic floor dysfunctions, chronic pain, and neurological conditions.
             </p>
             <p className="text-gray-900">
               Her approach integrates evidence-based practices with personalized care. Known for a compassionate and patient-centered approach, she has successfully helped countless individuals regain function, reduce pain, and improve their overall quality of life.
             </p>
             <p className="text-gray-900">
-              She is also dedicated to continuing education, regularly attending workshops and conferences to stay at the forefront of advancements in physiotherapy. She is certified in using dry needling (Intramuscular Stimulation/IMS) to treat musculoskeletal conditions and completed her "Women's pelvic floor course: The physical therapy approach to anyone experiencing Urinary Incontinence" to treat pelvic floor dysfunctions. 
+              She is also committed to continuing education, regularly attending workshops and conferences to stay at the forefront of advancements in physiotherapy. She is certified in using dry needling (Intramuscular Stimulation/IMS) to treat musculoskeletal conditions and completed her "Women's pelvic floor course: The physical therapy approach to anyone experiencing Urinary Incontinence" to treat pelvic floor dysfunctions. 
+            </p>
+            <p className="text-gray-900">
+              If you are interested in her research work, you can find her research project publications on Google Scholar <a href="https://scholar.google.com/citations?user=EZh5548AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">here</a>.
             </p>
           </div>
         </div>
