@@ -43,7 +43,7 @@ const Footer = () => {
     {
       title: 'Our Services',
       links: [
-        { name: 'Physiotherapy', href: '/services/physiotherapy' },
+        { name: 'Service Overview', href: '/services/physiotherapy' },
         { name: 'Musculoskeletal Injury', href: '/services/musculoskeletal-injury' },
         { name: 'Pelvic Floor Physiotherapy', href: '/services/pelvic-floor-physiotherapy' },
         { name: 'Neurological Rehab', href: '/services/neuro-rehab' },
@@ -54,11 +54,6 @@ const Footer = () => {
     {
       title: 'Contact Info',
       links: [
-        // { 
-        //   name: '123 Health St, San Francisco, CA 94110', 
-        //   icon: <FaMapMarkerAlt className="inline mr-2 text-primary-600" />,
-        //   href: 'https://maps.google.com?q=123+Health+St,+San+Francisco,+CA+94110'
-        // },
         { 
           name: 'livmophysio@gmail.com', 
           icon: <FaEnvelope className="inline mr-2 text-primary-600" />,
@@ -73,6 +68,16 @@ const Footer = () => {
           name: 'Tues-Sat: 11:00 AM - 8:00 PM', 
           icon: <FaClock className="inline mr-2 text-primary-600" />,
           href: ''
+        },
+        { 
+          name: 'Burnaby: 306 - 6411 Nelson Ave, Burnaby BC V5H 4H3', 
+          icon: <FaMapMarkerAlt className="inline mr-2 text-primary-600" />,
+          href: 'https://maps.google.com?q=306-6411+Nelson+Ave,+Burnaby+BC+V5H+4H3'
+        },
+        { 
+          name: 'New Westminster: 75 - 10th St, New Westminster, BC V3M 3X4', 
+          icon: <FaMapMarkerAlt className="inline mr-2 text-primary-600" />,
+          href: 'https://maps.google.com?q=75+10th+St,+New+Westminster,+BC+V3M+3X4'
         },
       ],
     },

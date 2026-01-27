@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Liv Motion Physiotherapy - Expert Physiotherapy in Vancouver & Burnaby",
-    description: "Expert physiotherapy services with Cherie Kuo, PT, PhD. Book your appointment at Omni Massage & Wellness or Mapleleaf Rehab today!",
+    description: "Expert physiotherapy services with Cherie Kuo, PT, PhD. Book your appointment today!",
     url: "https://www.cheriekuo.com",
     type: "website",
   },
@@ -42,21 +42,7 @@ export default function Home() {
               Expert physiotherapy services.
             </h1>
             <p className="max-w-md text-xl leading-8 text-zinc-100">
-              Looking for an expert physiotherapist to help your recovery? Book with Cherie at{" "}
-              <a
-                href="https://omnimassageandwellness.janeapp.com/#/staff_member/14"
-                className="font-bold text-zinc-100"
-              >
-                Omni Massage &amp; Wellness
-              </a>{" "}
-              or {" "}
-              <a
-                href="https://mapleleaf-rehab.janeapp.com/#/staff_member/12"
-                className="font-bold text-zinc-100"
-              >
-                Mapleleaf Rehab
-              </a>{" "}
-              today!
+              Looking for an expert physiotherapist to help your recovery? Cherie Kuo specilize in musculoskeletal injuries, women's pelvic floor physiotherapy, neurological rehab, and pain management. She currently practices at two convenient locations (Burnaby and New Westminster), and can deliver services at your home. Book with Cherie today!
             </p>
           </div>
           <div className="mt-8 flex flex-col gap-4 text-base font-medium sm:flex-row">
@@ -69,6 +55,42 @@ export default function Home() {
           </div>
         </main>
       </div>
+
+      <section className="bg-white py-16">
+        <div className="container mx-auto px-6">
+          <h2 className="text-2xl font-semibold tracking-tight text-gray-900 mb-8 text-center">
+            What Our Patients Say
+          </h2>
+          <div className="grid gap-6 md:grid-cols-3 max-w-5xl mx-auto">
+            <div className="rounded-2xl border border-zinc-200 bg-gray-50 p-6 shadow-sm">
+              <blockquote className="text-gray-700 italic mb-4">
+                &ldquo;Cherie is borderline a miracle worker. After 6 weeks, I can walk 10k steps with only the slightest bit of pain!&rdquo;
+              </blockquote>
+              <p className="font-semibold text-gray-900">— J.S.</p>
+            </div>
+            <div className="rounded-2xl border border-zinc-200 bg-gray-50 p-6 shadow-sm">
+              <blockquote className="text-gray-700 italic mb-4">
+                &ldquo;Professional and very knowledgeable. She tailored my treatment plan based on my needs. Great experience!&rdquo;
+              </blockquote>
+              <p className="font-semibold text-gray-900">— M.M.</p>
+            </div>
+            <div className="rounded-2xl border border-zinc-200 bg-gray-50 p-6 shadow-sm">
+              <blockquote className="text-gray-700 italic mb-4">
+                &ldquo;Her knowledge, care and attention helped me identify and fix a painful shoulder injury. Highly recommend!&rdquo;
+              </blockquote>
+              <p className="font-semibold text-gray-900">— T.M.</p>
+            </div>
+          </div>
+          <div className="text-center mt-8">
+            <a
+              href="/testimonials"
+              className="text-sm font-medium text-sky-700 hover:text-sky-800"
+            >
+              Read more testimonials →
+            </a>
+          </div>
+        </div>
+      </section>
 
       <section className="bg-gray-200 py-16">
         <div className="container mx-auto px-6 text-center">

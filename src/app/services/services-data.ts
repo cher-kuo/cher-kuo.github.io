@@ -9,13 +9,13 @@ export type Service = {
 
 export const services: Service[] = [
   {
-    title: "Physiotherapy",
+    title: "Services Overview",
     slug: "physiotherapy",
     description:
       "Comprehensive, evidence-based physiotherapy to restore movement, improve strength, and support recovery from everyday and complex conditions.",
     conditionsWeTreat: [
-      "Musculoskeletal injury",
-      "Pelvic floor physiotherapy",
+      "Musculoskeletal and/or sports injury",
+      "Women's pelvic floor dysfunction",
       "Neurological rehab",
       "Acute and chronic pain",
     ],
@@ -51,7 +51,7 @@ export const services: Service[] = [
     ],
   },
   {
-    title: "Pelvic Floor Physiotherapy",
+    title: "Women's Pelvic Floor Dysfunction",
     slug: "pelvic-floor-physiotherapy",
     description:
       "Specialized care for women's pelvic floor dysfunction, incontinence, and perinatal to postpartum recovery in a supportive, confidential environment.",
