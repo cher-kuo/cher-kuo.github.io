@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Privacy Policy - Liv Motion Physiotherapy",
+  description: "Learn how Liv Motion Physiotherapy collects, uses, and protects your personal information. Our privacy policy covers data handling for physiotherapy services in Vancouver & Burnaby.",
+  keywords: ["privacy policy", "data protection", "physiotherapy privacy", "patient information security"],
+  alternates: {
+    canonical: "/privacy-policy",
+  },
+  openGraph: {
+    title: "Privacy Policy - Liv Motion Physiotherapy",
+    description: "Learn how Liv Motion Physiotherapy protects your personal information and handles patient data.",
+    url: "https://www.cheriekuo.com/privacy-policy",
+    type: "website",
+  },
+};
+
 export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-slate-50 dark:bg-black">

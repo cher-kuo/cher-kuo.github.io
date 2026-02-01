@@ -1,3 +1,20 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Terms of Service - Liv Motion Physiotherapy",
+  description: "Review the terms of service for using Liv Motion Physiotherapy's website and booking physiotherapy appointments in Vancouver & Burnaby. Understand your rights and responsibilities.",
+  keywords: ["terms of service", "physiotherapy terms", "booking terms", "service agreement"],
+  alternates: {
+    canonical: "/terms-of-service",
+  },
+  openGraph: {
+    title: "Terms of Service - Liv Motion Physiotherapy",
+    description: "Terms governing the use of Liv Motion Physiotherapy's website and services.",
+    url: "https://www.cheriekuo.com/terms-of-service",
+    type: "website",
+  },
+};
+
 export default function TermsOfServicePage() {
   return (
     <main className="min-h-screen bg-slate-50 dark:bg-black">
