@@ -115,7 +115,7 @@ export default function ContactPage() {
         <section className="mt-12">
           <h2 className="text-xl font-semibold text-gray-900 mb-4">Our Locations</h2>
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="space-y-2">
+            <div className="space-y-3">
               <h3 className="font-semibold text-gray-900">Burnaby - Omni Massage & Wellness</h3>
               <p className="text-sm text-gray-700">306 - 6411 Nelson Ave, Burnaby BC V5H 4H3</p>
               <div className="rounded-xl overflow-hidden shadow-lg">
@@ -130,8 +130,12 @@ export default function ContactPage() {
                   title="Burnaby clinic location"
                 ></iframe>
               </div>
+              <div className="text-sm text-gray-700 bg-white/60 rounded-lg p-3">
+                <p className="font-semibold text-gray-900 mb-1">Parking</p>
+                <p>There is underground visitor parking in the building. Please be advised that visitor parking may be limited on weekends. The Metropolis at Metrotown is right next to us and offers free parking.</p>
+              </div>
             </div>
-            <div className="space-y-2">
+            <div className="space-y-3">
               <h3 className="font-semibold text-gray-900">New Westminster - Mapleleaf Rehab</h3>
               <p className="text-sm text-gray-700">75 - 10th St, New Westminster, BC V3M 3X4</p>
               <div className="rounded-xl overflow-hidden shadow-lg">
@@ -145,6 +149,10 @@ export default function ContactPage() {
                   referrerPolicy="no-referrer-when-downgrade"
                   title="New Westminster clinic location"
                 ></iframe>
+              </div>
+              <div className="text-sm text-gray-700 bg-white/60 rounded-lg p-3">
+                <p className="font-semibold text-gray-900 mb-1">Parking</p>
+                <p>There is free or paid street parking around the clinic. The Columbia Square Plaza offers free parking.</p>
               </div>
             </div>
           </div>
