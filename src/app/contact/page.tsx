@@ -132,7 +132,7 @@ export default function ContactPage() {
               </div>
               <div className="text-sm text-gray-700 bg-white/60 rounded-lg p-3">
                 <p className="font-semibold text-gray-900 mb-1">Parking</p>
-                <p>There is underground visitor parking in the building. Please be advised that visitor parking may be limited on weekends. The Metropolis at Metrotown is right next to us and offers free parking.</p>
+                <p>There is underground visitor parking in the building. Please be advised that visitor parking may be limited on the weekend. The Metropolis at Metrotown is right next to us and offers free parking.</p>
               </div>
             </div>
             <div className="space-y-3">

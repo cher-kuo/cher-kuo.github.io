@@ -36,6 +36,16 @@ export default function FeesPage() {
           </h1>
 
           <div className="space-y-8">
+            <div className="rounded-xl bg-green-50/80 p-6 shadow-lg backdrop-blur-sm border border-green-200">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">Free Consultation</h2>
+              <ul className="space-y-3 text-lg text-gray-800">
+                <li className="flex justify-between">
+                  <span>15 minutes</span>
+                  <span className="font-semibold text-green-600">Free</span>
+                </li>
+              </ul>
+            </div>
+
             <div className="rounded-xl bg-white/80 p-6 shadow-lg backdrop-blur-sm">
               <h2 className="text-xl font-semibold text-gray-900 mb-4">Initial Assessment and Treatment</h2>
               <ul className="space-y-3 text-lg text-gray-800">
