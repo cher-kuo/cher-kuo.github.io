@@ -37,7 +37,7 @@ export default function FeesPage() {
 
           <div className="space-y-8">
             <div className="rounded-xl bg-white/80 p-6 shadow-lg backdrop-blur-sm">
-              <h2 className="text-xl font-semibold text-gray-900 mb-4">Initial Assessment</h2>
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">Initial Assessment and Treatment</h2>
               <ul className="space-y-3 text-lg text-gray-800">
                 <li className="flex justify-between">
                   <span>45 minutes</span>
@@ -51,11 +51,35 @@ export default function FeesPage() {
             </div>
 
             <div className="rounded-xl bg-white/80 p-6 shadow-lg backdrop-blur-sm">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">Pelvic Physiotherapy Initial Assessment and Treatment</h2>
+              <ul className="space-y-3 text-lg text-gray-800">
+                <li className="flex justify-between">
+                  <span>60 minutes</span>
+                  <span className="font-semibold">$175</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="rounded-xl bg-white/80 p-6 shadow-lg backdrop-blur-sm">
               <h2 className="text-xl font-semibold text-gray-900 mb-4">In-Home Visit</h2>
               <ul className="space-y-3 text-lg text-gray-800">
                 <li className="flex justify-between">
                   <span>60 minutes</span>
                   <span className="font-semibold">$180</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="rounded-xl bg-white/80 p-6 shadow-lg backdrop-blur-sm">
+              <h2 className="text-xl font-semibold text-gray-900 mb-4">Follow-Up Session</h2>
+              <ul className="space-y-3 text-lg text-gray-800">
+                <li className="flex justify-between">
+                  <span>30 minutes</span>
+                  <span className="font-semibold">$100</span>
+                </li>
+                <li className="flex justify-between">
+                  <span>45 minutes</span>
+                  <span className="font-semibold">$140</span>
                 </li>
               </ul>
             </div>
