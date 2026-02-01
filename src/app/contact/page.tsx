@@ -111,6 +111,44 @@ export default function ContactPage() {
             </div>
           </div>
         </section>
+
+        <section className="mt-12">
+          <h2 className="text-xl font-semibold text-gray-900 mb-4">Our Locations</h2>
+          <div className="grid gap-6 md:grid-cols-2">
+            <div className="space-y-2">
+              <h3 className="font-semibold text-gray-900">Burnaby - Omni Massage & Wellness</h3>
+              <p className="text-sm text-gray-700">306 - 6411 Nelson Ave, Burnaby BC V5H 4H3</p>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2605.0!2d-123.0134!3d49.2276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486766e8b8a8b8b%3A0x0!2s6411%20Nelson%20Ave%2C%20Burnaby%2C%20BC!5e0!3m2!1sen!2sca!4v1700000000000"
+                  width="100%"
+                  height="250"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Burnaby clinic location"
+                ></iframe>
+              </div>
+            </div>
+            <div className="space-y-2">
+              <h3 className="font-semibold text-gray-900">New Westminster - Mapleleaf Rehab</h3>
+              <p className="text-sm text-gray-700">75 - 10th St, New Westminster, BC V3M 3X4</p>
+              <div className="rounded-xl overflow-hidden shadow-lg">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.0!2d-122.9108!3d49.2048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5486766e8b8a8b8b%3A0x0!2s75%2010th%20St%2C%20New%20Westminster%2C%20BC!5e0!3m2!1sen!2sca!4v1700000000000"
+                  width="100%"
+                  height="250"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="New Westminster clinic location"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
   );
