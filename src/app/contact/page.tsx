@@ -89,14 +89,14 @@ export default function ContactPage() {
               Booking information
             </h2>
             <p className="text-base leading-7 text-gray-900">
-              You can book physiotherapy appointments online through our clinic partners below. If you are unsure which location/service is right for you or if you require in-home services, please feel free to email or call us.
+              You can book physiotherapy appointments online through our clinic partners below, or book in-home physiotherapy directly.
             </p>
-            <div className="mt-4 flex flex-col gap-3 sm:flex-row">
+            <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
               <a
                 href="https://omnimassageandwellness.janeapp.com/#/staff_member/14"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex flex-col items-center justify-center rounded-full bg-green-600 px-10 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center justify-center rounded-full bg-green-600 w-full sm:w-48 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-green-700 hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span className="text-center font-bold">Book at Burnaby</span>
               </a>
@@ -104,9 +104,17 @@ export default function ContactPage() {
                 href="https://mapleleaf-rehab.janeapp.com/#/staff_member/12"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex flex-col items-center justify-center rounded-full bg-blue-900 px-6 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-blue-800 hover:-translate-y-0.5 active:translate-y-0"
+                className="inline-flex items-center justify-center rounded-full bg-blue-900 w-full sm:w-48 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-blue-800 hover:-translate-y-0.5 active:translate-y-0"
               >
                 <span className="text-center font-bold">Book at New West</span>
+              </a>
+              <a
+                href="https://www.colib.io/Booking/liv-motion-physiotherapy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center rounded-full bg-gray-700 w-full sm:w-48 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-gray-800 hover:-translate-y-0.5 active:translate-y-0"
+              >
+                <span className="text-center font-bold">Book In-Home Visit</span>
               </a>
             </div>
           </div>
