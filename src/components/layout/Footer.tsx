@@ -66,7 +66,7 @@ const Footer = () => {
           href: 'tel:+16047717898'
         },
         { 
-          name: 'Tues-Sat: 11:00 AM - 8:00 PM', 
+          name: 'Tues-Sat: 9:00 AM - 7:00 PM', 
           icon: <FaClock className="inline mr-2 text-primary-600" />,
           href: ''
         },

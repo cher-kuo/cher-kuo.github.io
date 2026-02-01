@@ -78,7 +78,7 @@ export default function ContactPage() {
                   Hours
                 </p>
                 <p className="mt-1 text-lg text-gray-900">
-                  Tuesday -Saturday: 11:00 AM -  8:00 PM
+                  Tuesday - Saturday: 9:00 AM - 7:00 PM
                 </p>
               </div>
             </div>
