@@ -82,16 +82,16 @@ export default function BookAppointmentPage() {
               In-Home Physiotherapy
             </h2>
             <p className="text-sm leading-6 text-gray-900 mb-3">
-              Please email us or give us a call if you require in-home physiotherapy sessions.
+              Click below to book in-home physiotherapy sessions. We&apos;ll come to you at your home or preferred location.
             </p>
-            <div className="flex flex-col gap-3 items-center">
-              <div className="inline-flex items-center justify-center rounded-full bg-gray-700 px-6 py-3 text-base font-semibold text-white shadow-md w-fit">
-                <span className="font-bold">Email us at <span className="underline">livmophysio@gmail.com</span></span>
-              </div>
-              <div className="inline-flex items-center justify-center rounded-full bg-gray-700 px-6 py-3 text-base font-semibold text-white shadow-md w-fit">
-                <span className="font-bold">Call us at +1-604-771-7898</span>
-              </div>
-            </div>
+            <a
+              href="https://www.colib.io/Booking/liv-motion-physiotherapy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex flex-col items-center justify-center rounded-full bg-gray-700 px-10 py-3 text-base font-semibold text-white shadow-md transition-transform transition-colors hover:bg-gray-800 hover:-translate-y-0.5 active:translate-y-0"
+            >
+              <span className="text-center font-bold">Book In-Home Visit</span>
+            </a>
           </article>
 
           <p className="text-lg leading-8 text-gray-900">

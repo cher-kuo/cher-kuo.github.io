@@ -152,7 +152,7 @@ export default function ContactPage() {
               </div>
               <div className="text-sm text-gray-700 bg-white/60 rounded-lg p-3">
                 <p className="font-semibold text-gray-900 mb-1">Parking</p>
-                <p>There is free or paid street parking around the clinic. The Columbia Square Plaza offers free parking.</p>
+                <p>There is free or paid street parking around the clinic. The Columbia Square Plaza sits right across from the street and offers free parking.</p>
               </div>
             </div>
           </div>
