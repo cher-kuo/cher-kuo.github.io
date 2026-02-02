@@ -63,7 +63,7 @@ export default async function ServiceDetailPage({ params }: ServicePageProps) {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/watercolor-mountain-bg.jpg"
-          alt="background"
+          alt="Watercolor mountain background for Liv Motion Physiotherapy service details"
           fill
           className="object-cover object-top"
           priority

@@ -22,7 +22,7 @@ export default function BookAppointmentPage() {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/images/watercolor-mountain-bg.jpg"
-          alt="background"
+          alt="Watercolor mountain background for Liv Motion Physiotherapy booking page"
           fill
           className="object-cover object-top"
           priority
