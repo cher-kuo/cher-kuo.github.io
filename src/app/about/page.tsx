@@ -58,7 +58,10 @@ export default function AboutPage() {
               She is also committed to continuing education, regularly attending workshops and conferences to stay at the forefront of advancements in physiotherapy. She is certified in using dry needling (Intramuscular Stimulation/IMS) to treat musculoskeletal conditions and completed her "Women's pelvic floor course: The physical therapy approach to anyone experiencing Urinary Incontinence" to treat pelvic floor dysfunctions. 
             </p>
             <p className="text-gray-900">
-              If you are interested in her research work, you can find her research project publications on Google Scholar <a href="https://scholar.google.com/citations?user=EZh5548AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">here</a>.
+              If you are interested in her research work, you can find her research publications on Google Scholar <a href="https://scholar.google.com/citations?user=EZh5548AAAAJ&hl=en" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">here</a>.
+            </p>
+              <p className="text-gray-900">
+              She was invited to present her research study for Developmental Medicine & Child Neurology in 2023, you can view the YouTube video <a href="https://www.youtube.com/watch?v=ouRWIkP9zIg" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">here</a>.
             </p>
           </div>
         </div>
