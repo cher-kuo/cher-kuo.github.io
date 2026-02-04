@@ -39,7 +39,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4">
         {/* Top Bar */}
-        <div className="hidden lg:flex justify-end items-center text-sm text-gray-600 mb-2 space-x-4">
+        <div className="hidden xl:flex justify-end items-center text-sm text-gray-600 mb-2 space-x-4">
           <a href="mailto:livmophysio@gmail.com" className="flex items-center hover:text-primary-600 transition-colors">
             <FiMail className="mr-1 text-primary-600" />
             <span>livmophysio@gmail.com</span>
@@ -64,7 +64,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-8">
+          <nav className="hidden xl:flex items-center space-x-6">
             {navItems.map((item) => (
               <Link 
                 key={item.name} 
@@ -84,7 +84,7 @@ const Navbar = () => {
 
           {/* Mobile menu button */}
           <button 
-            className="lg:hidden text-gray-700 focus:outline-none"
+            className="xl:hidden text-gray-700 focus:outline-none"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >
@@ -95,7 +95,7 @@ const Navbar = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="lg:hidden bg-white shadow-lg absolute top-full left-0 right-0 z-50">
+        <div className="xl:hidden bg-white shadow-lg absolute top-full left-0 right-0 z-50">
           <nav className="px-4 pt-2 pb-4 space-y-2">
             {navItems.map((item) => (
               <Link
