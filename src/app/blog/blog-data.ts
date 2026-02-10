@@ -32,7 +32,7 @@ export const blogPosts: BlogPost[] = [
       "A pelvic floor physiotherapist is trained to assess and treat these conditions using evidence-based techniques. Treatment may include:",
       "• Internal and external assessment – A thorough evaluation of pelvic floor muscle strength, coordination, and tone to identify areas of weakness or tension.",
       "• Pelvic floor exercises – Customized exercises (often called Kegels) to strengthen weak muscles or release tight muscles. Proper technique is essential—many women perform Kegels incorrectly without guidance.",
-      "• Manual therapy – Hands-on techniques to release tight muscles, mobilize scar tissue (including cesarean or perineal scars), and improve tissue mobility.",
+      "• Manual therapy – Hands-on techniques to release tight muscles, mobilize scar tissue, and improve tissue mobility.",
       "• Education – Guidance on bladder habits, posture, lifting techniques, and safe return to exercise postpartum.",
       "• Core rehabilitation – Exercises to restore core strength and coordination, including addressing diastasis recti.",
       // "• **Pessary fitting** – For prolapse, a pessary (a supportive device inserted into the vagina) may be recommended and fitted by a trained physiotherapist.",
