@@ -27,7 +27,7 @@ const faqs = [
   },
   {
     question: "Is physiotherapy covered by insurance?",
-    answer: "Most extended health insurance plans cover physiotherapy. Coverage varies depending on your plan, so we recommend checking with your insurance provider about your specific benefits. We provide receipts that you can submit for reimbursement. We do not direct bill to insurance companies.",
+    answer: "Most extended health insurance plans cover physiotherapy. Coverage varies depending on your plan, so we recommend checking with your insurance provider about your specific benefits. We provide direct billing with our clinic partners (Omni and Mapleleaf). However, we do not direct bill to insurance companies if you book in-home physiotherapy sessions.  We provide receipts that you can submit for reimbursement. ",
   },
   {
     question: "What happens during my first appointment?",
@@ -43,11 +43,11 @@ const faqs = [
   },
   {
     question: "What is pelvic floor physiotherapy?",
-    answer: "Pelvic floor physiotherapy is a specialized treatment for conditions affecting the pelvic floor muscles, including urinary incontinence, pelvic organ prolapse, pelvic pain, and prenatal/postpartum recovery. Treatment may include internal and external assessment, exercises, manual therapy, and education. It's a safe and effective approach for both women and men.",
+    answer: "Pelvic floor physiotherapy is a specialized treatment for conditions affecting the pelvic floor muscles, including urinary incontinence, pelvic organ prolapse, pelvic pain, and prenatal/postpartum recovery (such as diastasis recti). Treatment may include internal and external assessment, exercises, manual therapy, and education. It's a safe and effective approach to treating these conditions.",
   },
   {
     question: "Do you offer in-home physiotherapy?",
-    answer: "Yes, we offer in-home physiotherapy services for patients who have difficulty traveling to a clinic due to mobility issues, post-surgical recovery, or other circumstances. In-home visits are available in the Greater Vancouver area. Please contact us or book online to arrange an in-home appointment.",
+    answer: "Yes, we offer in-home physiotherapy services for patients who have difficulty traveling to a clinic due to mobility issues, post-surgical recovery, or other circumstances. In-home visits are available in the Greater Vancouver metropolitan area. Please contact us or book online to arrange an in-home appointment.",
   },
   {
     question: "What is your cancellation policy?",
@@ -55,7 +55,7 @@ const faqs = [
   },
   {
     question: "What forms of payment do you accept?",
-    answer: "We accept cash, credit cards (Visa, Mastercard), and e-transfer. Payment is due at the time of service. We provide receipts for insurance reimbursement.",
+    answer: "We accept credit cards (Visa, Mastercard, American Express) and e-transfer. Payment is due at the time of service. We provide receipts for insurance reimbursement.",
   },
 ];
 
